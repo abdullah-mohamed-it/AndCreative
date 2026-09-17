@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>And Creative Factory — Advertising, Engineering, Manufacturing &amp; Printing</title>
+<meta name="description" content="And Creative Factory: wood, metal and printing factories with in-house engineering and installation teams. Retail displays, shop-in-shop, signage and turnkey fit-out.">
+<link rel="icon" href="assets/img/logo.jpg">
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Fonts: Archivo (Latin) + IBM Plex Sans Arabic (Arabic) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Our own styles (only two files) -->
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+
+<!-- ============================================================
+     TOP BAR
+============================================================ -->
+<div class="topbar">
+  <div class="container d-flex flex-wrap align-items-center justify-content-between">
+    <div class="topbar-left">
+      <span><i class="bi bi-telephone-fill"></i> <a href="tel:+201000000000" dir="ltr">+20 100 000 0000</a></span>
+      <span class="d-none d-sm-inline"><i class="bi bi-envelope-fill"></i> <a href="mailto:info@andcreative.com">info@andcreative.com</a></span>
+    </div>
+    <div class="topbar-right" data-en="Industrial Zone, 6th of October City — Giza, Egypt" data-ar="المنطقة الصناعية، مدينة 6 أكتوبر — الجيزة، مصر"></div>
+  </div>
+</div>
+
+<!-- ============================================================
+     NAVBAR  (exists only once in the whole file)
+============================================================ -->
+<nav class="navbar navbar-expand-xl site-nav" id="siteNav">
+  <div class="container">
+
+    <a class="navbar-brand" href="#home" data-page="home">
+      <img src="assets/img/logo.jpg" alt="And Creative Factory">
+      <span class="brand-text">
+        <strong>and creative</strong>
+        <em data-en="Factory" data-ar="فاكتوري"></em>
+      </span>
+    </a>
+
+    <div class="nav-tools order-xl-3">
+      <button class="tool-btn" id="langBtn" type="button" title="Language">
+        <i class="bi bi-translate"></i><span id="langLabel">ع</span>
+      </button>
+      <button class="tool-btn" id="themeBtn" type="button" title="Theme">
+        <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+      </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse order-xl-2" id="mainMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home" data-page="home" data-en="Home" data-ar="الرئيسية"></a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" data-page="about" data-en="About" data-ar="عن الشركة"></a></li>
+        <li class="nav-item"><a class="nav-link" href="#capabilities" data-page="capabilities" data-en="Capabilities" data-ar="الإمكانيات"></a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#factories" role="button" data-bs-toggle="dropdown" data-en="Factories" data-ar="المصانع"></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#wood" data-page="wood" data-en="Wood Factory" data-ar="مصنع الأخشاب"></a></li>
+            <li><a class="dropdown-item" href="#metal" data-page="metal" data-en="Metal Factory" data-ar="مصنع المعادن"></a></li>
+            <li><a class="dropdown-item" href="#printing" data-page="printing" data-en="Printing Factory" data-ar="مصنع الطباعة"></a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#services" data-page="services" data-en="Services" data-ar="الخدمات"></a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects" data-page="projects" data-en="Projects" data-ar="المشروعات"></a></li>
+        <li class="nav-item"><a class="nav-link" href="#brands" data-page="brands" data-en="Brands" data-ar="العلامات"></a></li>
+        <li class="nav-item"><a class="nav-link" href="#process" data-page="process" data-en="Process" data-ar="مراحل العمل"></a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-page="contact" data-en="Contact" data-ar="تواصل معنا"></a></li>
+        <li class="nav-item nav-cta-item">
+          <a class="btn btn-red w-100" href="#contact" data-page="contact" data-en="Request a quote" data-ar="اطلب عرض سعر"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     ALL PAGES LIVE HERE (shown / hidden by main.js)
+============================================================ -->
+<main id="app">
+
+<!-- ========================= HOME ========================= -->
+<section class="page" id="page-home">
+
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <p class="hero-kicker" data-en="Advertising · Engineering · Manufacturing · Printing" data-ar="دعاية · هندسة · تصنيع · طباعة"></p>
+          <h1 class="hero-title" data-en="We build the places your brand is seen." data-ar="نصنع المكان الذي تُرى فيه علامتك التجارية."></h1>
+          <p class="hero-text" data-en="Three factories under one roof — wood, metal and printing — plus engineering and installation teams. One contract, one schedule, one team accountable from the first drawing to the last screw on site." data-ar="ثلاثة مصانع تحت سقف واحد — الأخشاب والمعادن والطباعة — إلى جانب فرق الهندسة والتركيب. عقد واحد وجدول زمني واحد وفريق واحد مسؤول من أول رسمة حتى آخر مسمار في الموقع."></p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-red btn-lg" data-page="projects" data-en="See our work" data-ar="شاهد أعمالنا"></a>
+            <a href="#contact" class="btn btn-outline-ink btn-lg" data-page="contact" data-en="Request a quote" data-ar="اطلب عرض سعر"></a>
+          </div>
+          <div class="hero-badges">
+            <span data-en="In-house production" data-ar="تصنيع داخلي"></span>
+            <span data-en="Nationwide rollout" data-ar="تنفيذ في كل المحافظات"></span>
+            <span data-en="ISO-ready QC" data-ar="مراقبة جودة معتمدة"></span>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-mosaic">
+            <figure class="m-tall"><img src="assets/img/project-zanussi-cooking-wall.jpg" alt="Retail display wall built and installed by And Creative Factory"></figure>
+            <figure class="m-small"><img src="assets/img/metal-accessories-tower-01.jpg" alt="Illuminated metal accessories tower"></figure>
+            <figure class="m-small"><img src="assets/img/project-kitchen-display.jpg" alt="Wooden kitchen display unit"></figure>
+            <div class="m-stat">
+              <strong class="counter" data-target="18">0</strong>
+              <span data-en="years building retail" data-ar="عامًا في تنفيذ الريتيل"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Counters -->
+  <section class="section counters-strip">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-lg-3">
+          <div class="counter-box reveal">
+            <strong><span class="counter" data-target="1250">0</span>+</strong>
+            <span data-en="Projects delivered" data-ar="مشروع تم تسليمه"></span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="counter-box reveal">
+            <strong><span class="counter" data-target="120">0</span>+</strong>
+            <span data-en="Brands served" data-ar="علامة تجارية"></span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="counter-box reveal">
+            <strong><span class="counter" data-target="9500">0</span></strong>
+            <span data-en="m² of factory floor" data-ar="متر مربع مساحة المصانع"></span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="counter-box reveal">
+            <strong><span class="counter" data-target="180">0</span>+</strong>
+            <span data-en="Engineers &amp; technicians" data-ar="مهندس وفني"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Three factories -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-en="Three factories, one delivery team" data-ar="ثلاثة مصانع وفريق تسليم واحد"></h2>
+        <p data-en="Nothing is subcontracted out of our control. Every panel, frame and print is produced in our own halls." data-ar="لا شيء يخرج عن سيطرتنا إلى مقاول خارجي. كل لوح وهيكل ومطبوع يُنتج داخل صالاتنا."></p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <a href="#wood" data-page="wood" class="factory-card reveal">
+            <img src="assets/img/project-kitchen-display.jpg" alt="Wood factory output">
+            <div class="fc-body">
+              <h3 data-en="Wood Factory" data-ar="مصنع الأخشاب"></h3>
+              <p data-en="CNC-cut MDF, plywood and HPL units: display walls, gondolas, counters and full kitchen sets." data-ar="وحدات MDF وأبلكاش وHPL بقص CNC: حوائط عرض، جندولات، كاونترات، ومطابخ كاملة."></p>
+              <span class="fc-link" data-en="Enter the wood factory" data-ar="ادخل مصنع الأخشاب"></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#metal" data-page="metal" class="factory-card reveal">
+            <img src="assets/img/metal-accessories-tower-02.jpg" alt="Metal factory output">
+            <div class="fc-body">
+              <h3 data-en="Metal Factory" data-ar="مصنع المعادن"></h3>
+              <p data-en="Laser cutting, bending, welding and powder coating for structures, towers and lightbox frames." data-ar="قص ليزر وثني ولحام ودهان إلكتروستاتيك للهياكل والأبراج وإطارات اللايت بوكس."></p>
+              <span class="fc-link" data-en="Enter the metal factory" data-ar="ادخل مصنع المعادن"></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#printing" data-page="printing" class="factory-card reveal">
+            <img src="assets/img/printing-lightbox-panel.jpg" alt="Printing factory output">
+            <div class="fc-body">
+              <h3 data-en="Printing Factory" data-ar="مصنع الطباعة"></h3>
+              <p data-en="UV flatbed, latex roll and vinyl production for graphics, lightbox faces and wall murals." data-ar="طباعة UV فلات بيد ولاتكس وفينيل للجرافيك وواجهات اللايت بوكس والجداريات."></p>
+              <span class="fc-link" data-en="Enter the printing factory" data-ar="ادخل مصنع الطباعة"></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video showcase -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-head light">
+        <h2 data-en="Inside the halls" data-ar="من داخل المصانع"></h2>
+        <p data-en="Short clips from production and site rollout. Replace these files in assets/videos/ with your own footage." data-ar="مقاطع قصيرة من الإنتاج والتركيب في الموقع. استبدل الملفات في مجلد assets/videos بفيديوهاتك."></p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="video-card reveal">
+            <video controls playsinline preload="none" poster="assets/img/showroom-hall-02.jpg">
+              <source src="assets/videos/factory-tour.mp4" type="video/mp4">
+            </video>
+            <h4 data-en="Factory tour" data-ar="جولة في المصنع"></h4>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="video-card reveal">
+            <video controls playsinline preload="none" poster="assets/img/project-kitchen-display.jpg">
+              <source src="assets/videos/wood-factory.mp4" type="video/mp4">
+            </video>
+            <h4 data-en="Wood line in action" data-ar="خط الأخشاب أثناء العمل"></h4>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="video-card reveal">
+            <video controls playsinline preload="none" poster="assets/img/project-zanussi-cooking-wall.jpg">
+              <source src="assets/videos/installation.mp4" type="video/mp4">
+            </video>
+            <h4 data-en="Store installation" data-ar="التركيب داخل المعرض"></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services preview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-en="What we take off your plate" data-ar="ما الذي ننفذه نيابة عنك"></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="mini-card reveal"><i class="bi bi-rulers"></i>
+            <h3 data-en="Site survey" data-ar="رفع المقاسات"></h3>
+            <p data-en="We measure the real space before anything is cut." data-ar="نقيس المكان على الطبيعة قبل قص أي خامة."></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="mini-card reveal"><i class="bi bi-vector-pen"></i>
+            <h3 data-en="Design &amp; shop drawings" data-ar="التصميم والرسومات التنفيذية"></h3>
+            <p data-en="3D visuals and production-ready drawings you approve before we build." data-ar="تصورات ثلاثية الأبعاد ورسومات جاهزة للتنفيذ تعتمدها قبل البدء."></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="mini-card reveal"><i class="bi bi-gear-wide-connected"></i>
+            <h3 data-en="Manufacturing" data-ar="التصنيع"></h3>
+            <p data-en="Wood, metal and print produced side by side on one schedule." data-ar="الأخشاب والمعادن والطباعة تُنتج معًا بجدول زمني واحد."></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="mini-card reveal"><i class="bi bi-truck"></i>
+            <h3 data-en="Delivery &amp; installation" data-ar="التوريد والتركيب"></h3>
+            <p data-en="Our own crews install overnight so the store opens on time." data-ar="فرقنا تركّب ليلًا حتى يفتح المعرض في موعده."></p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="#services" data-page="services" class="btn btn-outline-ink" data-en="All services" data-ar="كل الخدمات"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured work -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-en="Recent work" data-ar="أحدث الأعمال"></h2>
+        <p data-en="Shop-in-shop zones, display walls and full showroom fit-outs." data-ar="مناطق شوب إن شوب وحوائط عرض وتجهيز معارض متكاملة."></p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4"><figure class="shot reveal"><img src="assets/img/showroom-hall-03.jpg" alt="Showroom hall"><figcaption data-en="Showroom rollout — Cairo" data-ar="تجهيز معرض — القاهرة"></figcaption></figure></div>
+        <div class="col-md-4"><figure class="shot reveal"><img src="assets/img/project-laundry-wall.jpg" alt="Laundry display wall"><figcaption data-en="Laundry zone — display wall" data-ar="منطقة الغسالات — حائط عرض"></figcaption></figure></div>
+        <div class="col-md-4"><figure class="shot reveal"><img src="assets/img/project-storefront-facade.jpg" alt="Store facade"><figcaption data-en="Storefront &amp; facade cladding" data-ar="واجهة المحل والتكسية"></figcaption></figure></div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="#projects" data-page="projects" class="btn btn-red" data-en="Open the portfolio" data-ar="افتح معرض المشروعات"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality -->
+  <section class="section">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <img class="img-frame" src="assets/img/ph-qc.jpg" alt="Quality control inspection">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="mb-4" data-en="Checked twice before it leaves us" data-ar="يُفحص مرتين قبل أن يغادر المصنع"></h2>
+          <ul class="check-list">
+            <li data-en="Dimensional check against the approved shop drawing" data-ar="مطابقة المقاسات مع الرسم التنفيذي المعتمد"></li>
+            <li data-en="Colour match to brand Pantone on every printed face" data-ar="مطابقة الألوان لبانتون العلامة في كل وجه مطبوع"></li>
+            <li data-en="Dry assembly in the factory before packing" data-ar="تجميع تجريبي داخل المصنع قبل التغليف"></li>
+            <li data-en="Electrical and LED load test on illuminated units" data-ar="اختبار كهربائي وحمل LED للوحدات المضيئة"></li>
+            <li data-en="Photo report signed off with the client on handover" data-ar="تقرير مصوّر يُعتمد مع العميل عند التسليم"></li>
+          </ul>
+          <a href="#capabilities" data-page="capabilities" class="btn btn-outline-ink mt-3" data-en="How we work" data-ar="كيف نعمل"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands strip -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Trusted by" data-ar="عملاؤنا"></h2></div>
+      <div class="brand-strip">
+        <span>ZANUSSI</span><span>ELECTROLUX</span><span>FRESH</span><span>TORNADO</span><span>UNIONAIRE</span><span>BEKO</span><span>LG</span><span>SAMSUNG</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <h2 data-en="Have drawings, a photo, or just an idea?" data-ar="عندك رسومات أو صورة أو حتى فكرة؟"></h2>
+          <p data-en="Send it over and we will come back with a budget and a production schedule." data-ar="أرسلها لنا وسنعود إليك بالتكلفة وجدول التنفيذ."></p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="#contact" data-page="contact" class="btn btn-light btn-lg" data-en="Request a quote" data-ar="اطلب عرض سعر"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</section>
+<!-- ======================= END HOME ======================= -->
+
+<!-- ========================= ABOUT ========================= -->
+<section class="page" id="page-about">
+
+  <header class="page-hero" style="background-image:url('assets/img/showroom-hall-01.jpg')">
+    <div class="container">
+      <p class="ph-kicker" data-en="About us" data-ar="عن الشركة"></p>
+      <h1 data-en="A factory group that speaks the language of brands" data-ar="مجموعة مصانع تتحدث لغة العلامات التجارية"></h1>
+      <p class="ph-text" data-en="And Creative Factory started as a small joinery workshop and grew into an integrated advertising and manufacturing group serving retail across Egypt and the Gulf." data-ar="بدأت «آند كرييتف فاكتوري» كورشة نجارة صغيرة وتحولت إلى مجموعة متكاملة للدعاية والتصنيع تخدم قطاع التجزئة في مصر والخليج."></p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="mb-4" data-en="Who we are" data-ar="من نحن"></h2>
+          <p data-en="We design, engineer, manufacture, print and install. Because all of that happens inside our own buildings, a change on Sunday does not cost you a week — it costs you one production slot." data-ar="نصمم ونهندس ونصنّع ونطبع ونركّب. ولأن كل ذلك يتم داخل مبانينا، فإن أي تعديل لا يكلفك أسبوعًا — بل يكلفك فترة إنتاج واحدة فقط."></p>
+          <p data-en="Our clients are appliance brands, retail chains, developers and agencies who need a single partner responsible for the whole result, not five suppliers blaming each other." data-ar="عملاؤنا علامات أجهزة منزلية وسلاسل تجزئة ومطورون ووكالات دعاية يحتاجون شريكًا واحدًا مسؤولًا عن النتيجة كاملة، لا خمسة موردين يتبادلون الاتهامات."></p>
+          <div class="row g-3 mt-2">
+            <div class="col-6"><div class="fact"><strong class="counter" data-target="2008">0</strong><span data-en="Founded" data-ar="سنة التأسيس"></span></div></div>
+            <div class="col-6"><div class="fact"><strong><span class="counter" data-target="3">0</span></strong><span data-en="Production halls" data-ar="صالات إنتاج"></span></div></div>
+          </div>
+        </div>
+        <div class="col-lg-6"><img class="img-frame" src="assets/img/ph-about.jpg" alt="Facility overview"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head"><h2 data-en="What we hold ourselves to" data-ar="ما نلتزم به"></h2></div>
+      <div class="row g-4">
+        <div class="col-md-4"><div class="mini-card reveal"><i class="bi bi-calendar2-check"></i><h3 data-en="The date is the date" data-ar="الموعد هو الموعد"></h3><p data-en="Store openings do not move, so neither do our schedules." data-ar="افتتاحات المعارض لا تتأجل، ولذلك لا تتأجل جداولنا."></p></div></div>
+        <div class="col-md-4"><div class="mini-card reveal"><i class="bi bi-shield-check"></i><h3 data-en="Built to be used" data-ar="مصنوع ليتحمل الاستخدام"></h3><p data-en="Retail furniture is touched by thousands of hands. We build for that, not for a photo." data-ar="أثاث الريتيل تلمسه آلاف الأيدي. نصنعه ليتحمل ذلك، لا ليصلح للصورة فقط."></p></div></div>
+        <div class="col-md-4"><div class="mini-card reveal"><i class="bi bi-people"></i><h3 data-en="One team you can call" data-ar="فريق واحد تتصل به"></h3><p data-en="One project manager from survey to handover — the same phone number all the way." data-ar="مدير مشروع واحد من رفع المقاسات حتى التسليم — نفس رقم الهاتف طوال الوقت."></p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-5 align-items-center flex-lg-row-reverse">
+        <div class="col-lg-6"><img class="img-frame" src="assets/img/ph-team.jpg" alt="Our team"></div>
+        <div class="col-lg-6">
+          <h2 class="mb-4" data-en="The people behind it" data-ar="الفريق"></h2>
+          <p data-en="180 engineers, designers, machine operators, carpenters, welders, printers and installers. Most of our technicians have been with us for more than six years." data-ar="180 من المهندسين والمصممين ومشغلي الماكينات والنجارين واللحامين وفنيي الطباعة والتركيب. معظم فنيينا معنا منذ أكثر من ست سنوات."></p>
+          <ul class="check-list">
+            <li data-en="Design &amp; 3D visualisation studio" data-ar="استوديو التصميم والإظهار ثلاثي الأبعاد"></li>
+            <li data-en="Mechanical &amp; production engineering office" data-ar="مكتب الهندسة الميكانيكية والإنتاجية"></li>
+            <li data-en="Electrical &amp; lighting team for illuminated units" data-ar="فريق الكهرباء والإضاءة للوحدات المضيئة"></li>
+            <li data-en="Dedicated installation crews with their own transport" data-ar="فرق تركيب مخصصة بوسائل نقل خاصة"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container text-center">
+      <h2 data-en="Come see the halls" data-ar="تعال وشاهد المصانع"></h2>
+      <p data-en="Visits are welcome. Book a slot and we will walk you through a live project." data-ar="الزيارات مرحب بها. احجز موعدًا وسنأخذك في جولة على مشروع قيد التنفيذ."></p>
+      <a href="#contact" data-page="contact" class="btn btn-light btn-lg" data-en="Book a factory visit" data-ar="احجز زيارة للمصنع"></a>
+    </div>
+  </section>
+</section>
+
+<!-- ====================== CAPABILITIES ====================== -->
+<section class="page" id="page-capabilities">
+  <header class="page-hero" style="background-image:url('assets/img/showroom-hall-02.jpg')">
+    <div class="container">
+      <p class="ph-kicker" data-en="Capabilities" data-ar="الإمكانيات"></p>
+      <h1 data-en="Everything needed to turn a drawing into an open store" data-ar="كل ما يلزم لتحويل الرسم إلى معرض مفتوح"></h1>
+      <p class="ph-text" data-en="Engineering, three production lines, finishing, quality control and installation — under one management." data-ar="هندسة وثلاثة خطوط إنتاج وتشطيب ومراقبة جودة وتركيب — تحت إدارة واحدة."></p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Engineering first" data-ar="الهندسة أولًا"></h2>
+      <p data-en="Every job starts in the engineering office, not on the machine." data-ar="كل مشروع يبدأ في مكتب الهندسة، لا على الماكينة."></p></div>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6"><img class="img-frame" src="assets/img/ph-engineering.jpg" alt="Engineering office"></div>
+        <div class="col-lg-6">
+          <div class="spec-row"><h3 data-en="Shop drawings" data-ar="الرسومات التنفيذية"></h3><p data-en="AutoCAD and SolidWorks drawings for every part, with materials and finishes written on the sheet." data-ar="رسومات AutoCAD وSolidWorks لكل قطعة، مع الخامات والتشطيبات موضحة على اللوحة."></p></div>
+          <div class="spec-row"><h3 data-en="3D review" data-ar="المراجعة ثلاثية الأبعاد"></h3><p data-en="You see the unit rendered in the real store before we cut a single board." data-ar="ترى الوحدة مجسمة داخل المعرض الحقيقي قبل أن نقص لوحًا واحدًا."></p></div>
+          <div class="spec-row"><h3 data-en="Structural check" data-ar="المراجعة الإنشائية"></h3><p data-en="Load, anchoring and wall-fixing calculations for tall or suspended units." data-ar="حسابات الأحمال والتثبيت للوحدات المرتفعة أو المعلقة."></p></div>
+          <div class="spec-row"><h3 data-en="Value engineering" data-ar="هندسة القيمة"></h3><p data-en="We propose the material change that saves budget without changing what the customer sees." data-ar="نقترح تغيير الخامة الذي يوفر الميزانية دون أن يتغير ما يراه العميل."></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Production lines" data-ar="خطوط الإنتاج"></h2></div>
+      <div class="row g-4">
+        <div class="col-lg-4"><div class="cap-card reveal"><img src="assets/img/ph-cnc.jpg" alt="CNC router"><div class="cap-body"><h3 data-en="Wood line" data-ar="خط الأخشاب"></h3><p data-en="CNC nesting, edge banding, spray booth, assembly." data-ar="قص CNC، لصق حواف، غرفة دهان، تجميع."></p></div></div></div>
+        <div class="col-lg-4"><div class="cap-card reveal"><img src="assets/img/ph-laser.jpg" alt="Fiber laser"><div class="cap-body"><h3 data-en="Metal line" data-ar="خط المعادن"></h3><p data-en="Fiber laser, press brake, welding, powder coating." data-ar="ليزر فايبر، مكبس ثني، لحام، دهان إلكتروستاتيك."></p></div></div></div>
+        <div class="col-lg-4"><div class="cap-card reveal"><img src="assets/img/ph-uv-printer.jpg" alt="UV printer"><div class="cap-body"><h3 data-en="Print line" data-ar="خط الطباعة"></h3><p data-en="UV flatbed, latex roll, lamination, contour cutting." data-ar="UV فلات بيد، لاتكس رول، تغليف، قص كونتور."></p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Quality control" data-ar="مراقبة الجودة"></h2>
+      <p data-en="Five gates between the raw board and your store." data-ar="خمس نقاط فحص بين اللوح الخام ومعرضك."></p></div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4"><div class="qc-card reveal"><span class="qc-num">1</span><h3 data-en="Material inspection" data-ar="فحص الخامات"></h3><p data-en="Boards, sheets and inks checked on arrival against spec." data-ar="الألواح والصاج والأحبار تُفحص عند الاستلام مقابل المواصفة."></p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="qc-card reveal"><span class="qc-num">2</span><h3 data-en="First-piece approval" data-ar="اعتماد أول قطعة"></h3><p data-en="The first unit off the line is measured before the batch runs." data-ar="أول وحدة من الخط تُقاس قبل تشغيل الدفعة."></p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="qc-card reveal"><span class="qc-num">3</span><h3 data-en="Colour &amp; finish" data-ar="اللون والتشطيب"></h3><p data-en="Pantone match, gloss level and edge quality reviewed under standard light." data-ar="مطابقة بانتون ودرجة اللمعان وجودة الحواف تحت إضاءة قياسية."></p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="qc-card reveal"><span class="qc-num">4</span><h3 data-en="Dry assembly" data-ar="التجميع التجريبي"></h3><p data-en="Units are fully assembled in the factory, then dismantled and packed." data-ar="تُجمع الوحدات بالكامل في المصنع ثم تُفك وتُغلف."></p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="qc-card reveal"><span class="qc-num">5</span><h3 data-en="Site handover" data-ar="التسليم في الموقع"></h3><p data-en="Snag list closed on site and signed with a photo report." data-ar="تُغلق ملاحظات التسليم في الموقع وتُعتمد بتقرير مصوّر."></p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="qc-card reveal accent"><h3 data-en="Warranty" data-ar="الضمان"></h3><p data-en="12 months on structure and electrical work, with a maintenance line you can call." data-ar="12 شهرًا على الهيكل والأعمال الكهربائية، مع خط صيانة يمكنك الاتصال به."></p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container text-center">
+      <h2 data-en="Need a capability we did not list?" data-ar="تحتاج إمكانية لم نذكرها؟"></h2>
+      <a href="#contact" data-page="contact" class="btn btn-light btn-lg" data-en="Ask our engineers" data-ar="اسأل مهندسينا"></a>
+    </div>
+  </section>
+</section>
+
+<!-- ====================== WOOD FACTORY ====================== -->
+<section class="page" id="page-wood">
+  <header class="page-hero" style="background-image:url('assets/img/project-kitchen-display.jpg')">
+    <div class="container">
+      <p class="ph-kicker" data-en="Wood Factory" data-ar="مصنع الأخشاب"></p>
+      <h1 data-en="Panels, counters and display walls cut to the millimetre" data-ar="ألواح وكاونترات وحوائط عرض بدقة الملليمتر"></h1>
+      <p class="ph-text" data-en="4,000 m² of joinery: nesting CNC, edge banding, spray finishing and assembly, running two shifts." data-ar="4000 متر مربع للنجارة: ماكينات CNC، لصق حواف، دهان، وتجميع، بورديتين عمل."></p>
+      <a href="#contact" data-page="contact" class="btn btn-red btn-lg mt-3" data-en="Request a quote" data-ar="اطلب عرض سعر"></a>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="mb-4" data-en="Factory overview" data-ar="نظرة عامة على المصنع"></h2>
+          <p data-en="The wood factory carries most of what a customer actually touches in a store: counters, gondolas, cabinet runs, display backs and kitchen sets. We work mainly in MDF, plywood, HPL-faced board and solid beech for structural parts." data-ar="مصنع الأخشاب ينتج معظم ما يلمسه العميل فعليًا داخل المعرض: الكاونترات والجندولات والوحدات والخلفيات والمطابخ. نعمل أساسًا بخامات MDF والأبلكاش والألواح المكسوة HPL والزان المصمت للأجزاء الإنشائية."></p>
+          <div class="row g-3">
+            <div class="col-6"><div class="fact"><strong><span class="counter" data-target="4000">0</span></strong><span data-en="m² hall" data-ar="متر مربع"></span></div></div>
+            <div class="col-6"><div class="fact"><strong><span class="counter" data-target="65">0</span></strong><span data-en="carpenters &amp; operators" data-ar="نجار ومشغل"></span></div></div>
+          </div>
+        </div>
+        <div class="col-lg-6"><img class="img-frame" src="assets/img/ph-wood-hero.jpg" alt="Wood factory hall"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Engineering team" data-ar="الفريق الهندسي"></h2>
+      <p data-en="Six engineers who only do joinery detailing — joints, hardware and tolerances." data-ar="ستة مهندسين متخصصون في تفاصيل النجارة — الوصلات والإكسسوارات والسماحيات."></p></div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3"><div class="mini-card reveal"><i class="bi bi-diagram-3"></i><h3 data-en="Nesting &amp; optimisation" data-ar="التعشيش وتقليل الهالك"></h3><p data-en="Cutting plans that keep board waste under 8%." data-ar="خطط قص تُبقي هالك الألواح أقل من 8%."></p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="mini-card reveal"><i class="bi bi-tools"></i><h3 data-en="Hardware selection" data-ar="اختيار الإكسسوار"></h3><p data-en="Hinges, slides and locks rated for retail traffic." data-ar="مفصلات ومجاري وأقفال تتحمل استخدام المحلات."></p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="mini-card reveal"><i class="bi bi-box-seam"></i><h3 data-en="Flat-pack design" data-ar="تصميم قابل للفك"></h3><p data-en="Units that fit through a real shop door and rebuild in an hour." data-ar="وحدات تمر من باب المحل الحقيقي وتُركب في ساعة."></p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="mini-card reveal"><i class="bi bi-lightbulb"></i><h3 data-en="Integrated lighting" data-ar="إضاءة مدمجة"></h3><p data-en="LED channels routed into the panel, not stuck on after." data-ar="قنوات LED محفورة داخل اللوح، لا ملصقة بعد التنفيذ."></p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Production process" data-ar="مراحل الإنتاج"></h2></div>
+      <ol class="flow">
+        <li><h3 data-en="Cutting list" data-ar="قائمة القص"></h3><p data-en="Drawings converted into a nested cutting file." data-ar="تحويل الرسومات إلى ملف قص معشّش."></p></li>
+        <li><h3 data-en="CNC routing" data-ar="القص على CNC"></h3><p data-en="Panels cut, drilled and grooved in one pass." data-ar="قص وتخريم وتفريز الألواح في مرة واحدة."></p></li>
+        <li><h3 data-en="Edge banding" data-ar="لصق الحواف"></h3><p data-en="PUR edges applied for a seamless, water-resistant finish." data-ar="حواف PUR لتشطيب متصل ومقاوم للماء."></p></li>
+        <li><h3 data-en="Finishing" data-ar="التشطيب"></h3><p data-en="Primer, spray colour and lacquer in a dust-controlled booth." data-ar="أساس ودهان ولاكيه داخل غرفة خالية من الأتربة."></p></li>
+        <li><h3 data-en="Assembly &amp; test fit" data-ar="التجميع والتجربة"></h3><p data-en="Built, checked, dismantled and packed for transport." data-ar="تجميع وفحص وفك وتغليف للنقل."></p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-head light"><h2 data-en="Machines &amp; materials" data-ar="الماكينات والخامات"></h2></div>
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <table class="spec-table">
+            <tr><th data-en="CNC router" data-ar="ماكينة CNC"></th><td data-en="2 × 3-axis, 1220 × 2440 mm bed, auto tool change" data-ar="عدد 2 ثلاثية المحاور، سطح 1220×2440 مم، تغيير عدة أوتوماتيكي"></td></tr>
+            <tr><th data-en="Edge bander" data-ar="ماكينة لصق الحواف"></th><td data-en="PUR hot-melt, up to 3 mm PVC edge" data-ar="PUR هوت ملت، حتى حافة PVC بسمك 3 مم"></td></tr>
+            <tr><th data-en="Panel saw" data-ar="منشار الألواح"></th><td data-en="Beam saw with pressure bar" data-ar="منشار أفقي بقضيب ضغط"></td></tr>
+            <tr><th data-en="Spray booth" data-ar="غرفة الدهان"></th><td data-en="Water-curtain booth with drying room" data-ar="غرفة بستارة مائية وغرفة تجفيف"></td></tr>
+            <tr><th data-en="Materials" data-ar="الخامات"></th><td data-en="MDF, HDF, plywood, HPL, melamine board, beech, corian" data-ar="MDF، HDF، أبلكاش، HPL، ميلامين، زان، كوريان"></td></tr>
+          </table>
+        </div>
+        <div class="col-lg-5">
+          <img class="img-frame" src="assets/img/ph-edgebander.jpg" alt="Edge bander">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Projects from this factory" data-ar="مشروعات من هذا المصنع"></h2></div>
+      <div class="row g-4">
+        <div class="col-md-4"><figure class="shot reveal"><img src="assets/img/project-kitchen-display.jpg" alt="Kitchen display"><figcaption data-en="Built-in kitchen display run" data-ar="وحدة عرض مطابخ مدمجة"></figcaption></figure></div>
+        <div class="col-md-4"><figure class="shot reveal"><img src="assets/img/wood-kitchen-panel-01.jpg" alt="Kitchen panel"><figcaption data-en="Sliding graphic panel wall" data-ar="حائط بانوهات متحركة"></figcaption></figure></div>
+        <div class="col-md-4"><figure class="shot reveal"><img src="assets/img/detail-joinery-lock.jpg" alt="Joinery detail"><figcaption data-en="Lockable storage detail" data-ar="تفصيلة درج بقفل"></figcaption></figure></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Gallery" data-ar="معرض الصور"></h2></div>
+      <div class="gallery">
+        <img src="assets/img/wood-kitchen-panel-02.jpg" alt="Wood panel wall" class="gallery-img">
+        <img src="assets/img/detail-backsplash-counter.jpg" alt="Counter detail" class="gallery-img">
+        <img src="assets/img/install-corner-unit.jpg" alt="Corner unit" class="gallery-img">
+        <img src="assets/img/ph-cnc.jpg" alt="CNC router" class="gallery-img">
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container text-center">
+      <h2 data-en="Send us your joinery drawings" data-ar="أرسل لنا رسومات النجارة"></h2>
+      <a href="#contact" data-page="contact" class="btn btn-light btn-lg" data-en="Request a quote" data-ar="اطلب عرض سعر"></a>
+    </div>
+  </section>
+</section>
+
+<!-- ====================== METAL FACTORY ====================== -->
+<section class="page" id="page-metal">
+  <header class="page-hero" style="background-image:url('assets/img/metal-accessories-tower-02.jpg')">
+    <div class="container">
+      <p class="ph-kicker" data-en="Metal Factory" data-ar="مصنع المعادن"></p>
+      <h1 data-en="Structures that hold everything else up" data-ar="هياكل تحمل كل ما سواها"></h1>
+      <p class="ph-text" data-en="Fiber laser cutting, CNC bending, welding and powder coating for frames, towers, stands and facades." data-ar="قص ليزر فايبر وثني CNC ولحام ودهان إلكتروستاتيك للإطارات والأبراج والاستاندات والواجهات."></p>
+      <a href="#contact" data-page="contact" class="btn btn-red btn-lg mt-3" data-en="Request a quote" data-ar="اطلب عرض سعر"></a>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="mb-4" data-en="Factory overview" data-ar="نظرة عامة على المصنع"></h2>
+          <p data-en="Steel, stainless and aluminium work for anything that carries load or needs to survive outdoors: display towers, lightbox bodies, facade cladding frames, shelving structures and custom hardware." data-ar="أعمال الصاج والاستانلس والألومنيوم لكل ما يتحمل أحمالًا أو يتعرض للخارج: أبراج العرض، وهياكل اللايت بوكس، وإطارات تكسية الواجهات، وهياكل الأرفف، والإكسسوارات الخاصة."></p>
+          <div class="row g-3">
+            <div class="col-6"><div class="fact"><strong><span class="counter" data-target="3200">0</span></strong><span data-en="m² hall" data-ar="متر مربع"></span></div></div>
+            <div class="col-6"><div class="fact"><strong><span class="counter" data-target="48">0</span></strong><span data-en="welders &amp; operators" data-ar="لحام ومشغل"></span></div></div>
+          </div>
+        </div>
+        <div class="col-lg-6"><img class="img-frame" src="assets/img/ph-metal-hero.jpg" alt="Metal factory hall"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Engineering team" data-ar="الفريق الهندسي"></h2>
+      <p data-en="Mechanical engineers who check the load before the welder picks up the torch." data-ar="مهندسون ميكانيكيون يراجعون الأحمال قبل أن يمسك اللحام بالشعلة."></p></div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3"><div class="mini-card reveal"><i class="bi bi-bounding-box"></i><h3 data-en="Sheet-metal detailing" data-ar="تفاصيل الصاج"></h3><p data-en="Flat patterns, bend allowances and weld prep drawn per part." data-ar="مخططات الفرد وسماحيات الثني وتجهيز اللحام لكل قطعة."></p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="mini-card reveal"><i class="bi bi-activity"></i><h3 data-en="Load calculation" data-ar="حسابات الأحمال"></h3><p data-en="Shelf loads, wind load on facades, anchor selection." data-ar="أحمال الأرفف وأحمال الرياح على الواجهات واختيار المثبتات."></p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="mini-card reveal"><i class="bi bi-lightning-charge"></i><h3 data-en="Electrical integration" data-ar="التكامل الكهربائي"></h3><p data-en="Cable routes, drivers and earth continuity designed into the frame." data-ar="مسارات الكابلات والدرايفرات والتأريض مصممة داخل الهيكل."></p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="mini-card reveal"><i class="bi bi-arrow-repeat"></i><h3 data-en="Repeatability" data-ar="قابلية التكرار"></h3><p data-en="Jigs and fixtures so unit 200 matches unit 1." data-ar="أدوات تثبيت تجعل الوحدة رقم 200 مطابقة للوحدة الأولى."></p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Production process" data-ar="مراحل الإنتاج"></h2></div>
+      <ol class="flow">
+        <li><h3 data-en="Nesting" data-ar="التعشيش"></h3><p data-en="Parts nested on the sheet to minimise offcuts." data-ar="ترتيب القطع على اللوح لتقليل الفاقد."></p></li>
+        <li><h3 data-en="Laser cutting" data-ar="القص بالليزر"></h3><p data-en="Clean edges that need no grinding before bending." data-ar="حواف نظيفة لا تحتاج تجليخًا قبل الثني."></p></li>
+        <li><h3 data-en="Bending" data-ar="الثني"></h3><p data-en="CNC press brake with programmed back gauge." data-ar="مكبس ثني CNC بمصدات مبرمجة."></p></li>
+        <li><h3 data-en="Welding &amp; grinding" data-ar="اللحام والتجليخ"></h3><p data-en="MIG and TIG, then dressed flat where it shows." data-ar="لحام MIG وTIG ثم تسوية في الأجزاء الظاهرة."></p></li>
+        <li><h3 data-en="Powder coating" data-ar="الدهان الإلكتروستاتيك"></h3><p data-en="Degrease, phosphate, coat and oven cure." data-ar="إزالة شحوم وفوسفتة ودهان وفرن تجفيف."></p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-head light"><h2 data-en="Machines &amp; materials" data-ar="الماكينات والخامات"></h2></div>
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <table class="spec-table">
+            <tr><th data-en="Fiber laser" data-ar="ليزر فايبر"></th><td data-en="3 kW, 1500 × 3000 mm, up to 12 mm mild steel" data-ar="3 كيلوواط، 1500×3000 مم، حتى 12 مم صاج أسود"></td></tr>
+            <tr><th data-en="Press brake" data-ar="مكبس الثني"></th><td data-en="CNC 135 ton, 3200 mm" data-ar="CNC 135 طن، 3200 مم"></td></tr>
+            <tr><th data-en="Welding" data-ar="اللحام"></th><td data-en="MIG, TIG and spot welding stations" data-ar="محطات لحام MIG وTIG ونقطي"></td></tr>
+            <tr><th data-en="Powder line" data-ar="خط الدهان"></th><td data-en="Pre-treatment tunnel + 6 m curing oven" data-ar="نفق معالجة + فرن تجفيف 6 متر"></td></tr>
+            <tr><th data-en="Materials" data-ar="الخامات"></th><td data-en="Mild steel, stainless 304, aluminium, brass, expanded mesh" data-ar="صاج أسود، استانلس 304، ألومنيوم، نحاس، شبك ممدد"></td></tr>
+          </table>
+        </div>
+        <div class="col-lg-5"><img class="img-frame" src="assets/img/ph-press-brake.jpg" alt="Press brake"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Projects from this factory" data-ar="مشروعات من هذا المصنع"></h2></div>
+      <div class="row g-4">
+        <div class="col-md-4"><figure class="shot reveal"><img src="assets/img/metal-accessories-tower-01.jpg" alt="Accessories tower"><figcaption data-en="Illuminated accessories tower" data-ar="برج إكسسوارات مضيء"></figcaption></figure></div>
+        <div class="col-md-4"><figure class="shot reveal"><img src="assets/img/metal-accessories-tower-02.jpg" alt="Double-sided tower"><figcaption data-en="Double-sided merchandising tower" data-ar="برج عرض ذو وجهين"></figcaption></figure></div>
+        <div class="col-md-4"><figure class="shot reveal"><img src="assets/img/project-storefront-facade.jpg" alt="Facade"><figcaption data-en="Facade frame &amp; cladding" data-ar="هيكل وتكسية الواجهة"></figcaption></figure></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Gallery" data-ar="معرض الصور"></h2></div>
+      <div class="gallery">
+        <img src="assets/img/ph-laser.jpg" alt="Laser cutting" class="gallery-img">
+        <img src="assets/img/project-laundry-perlamax.jpg" alt="Laundry zone" class="gallery-img">
+        <img src="assets/img/project-laundry-steammax.jpg" alt="Laundry display" class="gallery-img">
+        <img src="assets/img/ph-powder.jpg" alt="Powder coating" class="gallery-img">
+        <img src="assets/img/install-corner-unit.jpg" alt="Installed unit" class="gallery-img">
+        <img src="assets/img/showroom-hall-01.jpg" alt="Showroom" class="gallery-img">
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container text-center">
+      <h2 data-en="Have a structure to build?" data-ar="عندك هيكل تريد تنفيذه؟"></h2>
+      <a href="#contact" data-page="contact" class="btn btn-light btn-lg" data-en="Request a quote" data-ar="اطلب عرض سعر"></a>
+    </div>
+  </section>
+</section>
+
+<!-- ==================== PRINTING FACTORY ==================== -->
+<section class="page" id="page-printing">
+  <header class="page-hero" style="background-image:url('assets/img/printing-wall-graphic.jpg')">
+    <div class="container">
+      <p class="ph-kicker" data-en="Printing Factory" data-ar="مصنع الطباعة"></p>
+      <h1 data-en="Colour that matches the brand book, on any surface" data-ar="ألوان مطابقة لدليل العلامة على أي سطح"></h1>
+      <p class="ph-text" data-en="UV flatbed, latex roll and vinyl production for graphics, lightbox faces, murals and full facade wraps." data-ar="طباعة UV فلات بيد ولاتكس وفينيل للجرافيك وواجهات اللايت بوكس والجداريات وتغليف الواجهات."></p>
+      <a href="#contact" data-page="contact" class="btn btn-red btn-lg mt-3" data-en="Request a quote" data-ar="اطلب عرض سعر"></a>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="mb-4" data-en="Factory overview" data-ar="نظرة عامة على المصنع"></h2>
+          <p data-en="The print hall finishes what wood and metal build. We print direct to acrylic, PVC, aluminium composite and board, or onto vinyl and backlit film for applied graphics." data-ar="صالة الطباعة تُكمل ما تصنعه الأخشاب والمعادن. نطبع مباشرة على الأكريليك وPVC والألوكوبوند والألواح، أو على الفينيل وفيلم الإضاءة الخلفية للجرافيك اللاصق."></p>
+          <div class="row g-3">
+            <div class="col-6"><div class="fact"><strong><span class="counter" data-target="2300">0</span></strong><span data-en="m² hall" data-ar="متر مربع"></span></div></div>
+            <div class="col-6"><div class="fact"><strong><span class="counter" data-target="24">0</span>/7</strong><span data-en="print shifts" data-ar="ورديات طباعة"></span></div></div>
+          </div>
+        </div>
+        <div class="col-lg-6"><img class="img-frame" src="assets/img/ph-print-hero.jpg" alt="Printing factory hall"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Prepress &amp; colour team" data-ar="فريق ما قبل الطباعة والألوان"></h2>
+      <p data-en="Artwork does not go to the machine until colour and resolution are checked." data-ar="لا يذهب التصميم إلى الماكينة قبل مراجعة اللون والدقة."></p></div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3"><div class="mini-card reveal"><i class="bi bi-palette"></i><h3 data-en="Colour management" data-ar="إدارة الألوان"></h3><p data-en="ICC profiles per material, Pantone proofed before the run." data-ar="ملفات ICC لكل خامة، وبروفة بانتون قبل التشغيل."></p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="mini-card reveal"><i class="bi bi-aspect-ratio"></i><h3 data-en="Artwork scaling" data-ar="تكبير التصميمات"></h3><p data-en="Large-format files rebuilt so a 6 m mural stays sharp." data-ar="إعادة بناء الملفات الكبيرة ليظل الجدارية 6 أمتار حادة."></p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="mini-card reveal"><i class="bi bi-layers"></i><h3 data-en="Layering &amp; white ink" data-ar="الطبقات والحبر الأبيض"></h3><p data-en="White underbase and spot gloss on clear substrates." data-ar="طبقة بيضاء سفلية ولمعان موضعي على الخامات الشفافة."></p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="mini-card reveal"><i class="bi bi-scissors"></i><h3 data-en="Cut paths" data-ar="مسارات القص"></h3><p data-en="Contour cutting prepared with the print, not after." data-ar="مسارات القص تُجهز مع الطباعة لا بعدها."></p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Production process" data-ar="مراحل الإنتاج"></h2></div>
+      <ol class="flow">
+        <li><h3 data-en="File check" data-ar="مراجعة الملف"></h3><p data-en="Resolution, bleed, colour mode and fonts verified." data-ar="مراجعة الدقة والحواف ونظام الألوان والخطوط."></p></li>
+        <li><h3 data-en="Proofing" data-ar="البروفة"></h3><p data-en="A sample strip printed on the real material." data-ar="طباعة عينة على الخامة الحقيقية."></p></li>
+        <li><h3 data-en="Printing" data-ar="الطباعة"></h3><p data-en="UV flatbed for rigid, latex for roll media." data-ar="UV للخامات الصلبة، لاتكس للرول."></p></li>
+        <li><h3 data-en="Lamination" data-ar="التغليف"></h3><p data-en="Matt or gloss film for scratch and UV protection." data-ar="فيلم مطفي أو لامع للحماية من الخدش والأشعة."></p></li>
+        <li><h3 data-en="Cutting &amp; mounting" data-ar="القص والتركيب"></h3><p data-en="Contour cut, then mounted onto the finished unit." data-ar="قص كونتور ثم تركيب على الوحدة النهائية."></p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-head light"><h2 data-en="Machines &amp; materials" data-ar="الماكينات والخامات"></h2></div>
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <table class="spec-table">
+            <tr><th data-en="UV flatbed" data-ar="UV فلات بيد"></th><td data-en="2500 × 1300 mm bed, CMYK + white + varnish" data-ar="سطح 2500×1300 مم، CMYK + أبيض + ورنيش"></td></tr>
+            <tr><th data-en="Latex roll printer" data-ar="طابعة لاتكس رول"></th><td data-en="3.2 m width, odourless outdoor-grade output" data-ar="عرض 3.2 متر، إنتاج خارجي بدون روائح"></td></tr>
+            <tr><th data-en="Laminator" data-ar="ماكينة التغليف"></th><td data-en="1.6 m cold laminator" data-ar="تغليف بارد بعرض 1.6 متر"></td></tr>
+            <tr><th data-en="Cutting plotter" data-ar="ماكينة القص"></th><td data-en="Optical registration contour cutting" data-ar="قص كونتور بقراءة ضوئية"></td></tr>
+            <tr><th data-en="Materials" data-ar="الخامات"></th><td data-en="Acrylic, PVC foam, ACP, backlit film, one-way vision, canvas, mesh" data-ar="أكريليك، PVC فوم، ألوكوبوند، فيلم إضاءة خلفية، ون واي، كانفس، ميش"></td></tr>
+          </table>
+        </div>
+        <div class="col-lg-5"><img class="img-frame" src="assets/img/ph-latex.jpg" alt="Latex printer"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Projects from this factory" data-ar="مشروعات من هذا المصنع"></h2></div>
+      <div class="row g-4">
+        <div class="col-md-4"><figure class="shot reveal"><img src="assets/img/printing-lightbox-panel.jpg" alt="Lightbox"><figcaption data-en="Backlit lightbox graphics" data-ar="جرافيك لايت بوكس مضيء"></figcaption></figure></div>
+        <div class="col-md-4"><figure class="shot reveal"><img src="assets/img/printing-wall-graphic.jpg" alt="Wall mural"><figcaption data-en="Full-wall printed mural" data-ar="جدارية مطبوعة بالكامل"></figcaption></figure></div>
+        <div class="col-md-4"><figure class="shot reveal"><img src="assets/img/printing-accessories-panel.jpg" alt="Printed panel"><figcaption data-en="Bilingual product panels" data-ar="بانوهات منتجات ثنائية اللغة"></figcaption></figure></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2 data-en="Gallery" data-ar="معرض الصور"></h2></div>
+      <div class="gallery">
+        <img src="assets/img/ph-uv-printer.jpg" alt="UV printer" class="gallery-img">
+        <img src="assets/img/ph-cutting-plotter.jpg" alt="Cutting plotter" class="gallery-img">
+        <img src="assets/img/showroom-hall-02.jpg" alt="Showroom graphics" class="gallery-img">
+        <img src="assets/img/project-zanussi-cooking-wall.jpg" alt="Printed display wall" class="gallery-img">
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container text-center">
+      <h2 data-en="Send your artwork, get a printed proof" data-ar="أرسل التصميم واحصل على بروفة مطبوعة"></h2>
+      <a href="#contact" data-page="contact" class="btn btn-light btn-lg" data-en="Request a quote" data-ar="اطلب عرض سعر"></a>
+    </div>
+  </section>
+</section>
+
+<!-- ======================== SERVICES ======================== -->
+<section class="page" id="page-services">
+  <header class="page-hero" style="background-image:url('assets/img/showroom-hall-03.jpg')">
+    <div class="container">
+      <p class="ph-kicker" data-en="Services" data-ar="الخدمات"></p>
+      <h1 data-en="From the first sketch to the maintenance call" data-ar="من أول رسم حتى مكالمة الصيانة"></h1>
+      <p class="ph-text" data-en="Pick one service or hand us the whole project. Most clients start with one and end up giving us all of it." data-ar="اختر خدمة واحدة أو سلّمنا المشروع كاملًا. معظم عملائنا يبدأون بخدمة واحدة ثم يسندون إلينا كل شيء."></p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4"><div class="service-card reveal"><i class="bi bi-lightbulb"></i><h3 data-en="Concept &amp; retail design" data-ar="التصميم وهوية المعارض"></h3><p data-en="Zone layouts, display concepts and brand-consistent detailing for new store formats." data-ar="توزيع المناطق ومفاهيم العرض والتفاصيل المتوافقة مع هوية العلامة لصيغ المعارض الجديدة."></p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="service-card reveal"><i class="bi bi-rulers"></i><h3 data-en="Site survey &amp; as-built" data-ar="رفع المقاسات والمخططات الفعلية"></h3><p data-en="We measure walls, power points and door widths before design is frozen." data-ar="نقيس الحوائط ونقاط الكهرباء وعرض الأبواب قبل اعتماد التصميم."></p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="service-card reveal"><i class="bi bi-vector-pen"></i><h3 data-en="Shop drawings &amp; 3D" data-ar="الرسومات التنفيذية والإظهار"></h3><p data-en="Production-ready drawings plus renders you can approve with confidence." data-ar="رسومات جاهزة للتنفيذ مع مشاهد ثلاثية الأبعاد تعتمدها باطمئنان."></p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="service-card reveal"><i class="bi bi-hammer"></i><h3 data-en="Joinery manufacturing" data-ar="تصنيع النجارة"></h3><p data-en="Counters, gondolas, display walls, cabinets and kitchen sets." data-ar="كاونترات وجندولات وحوائط عرض ووحدات ومطابخ."></p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="service-card reveal"><i class="bi bi-nut"></i><h3 data-en="Metal fabrication" data-ar="تصنيع المعادن"></h3><p data-en="Frames, towers, stands, facade structures and custom brackets." data-ar="إطارات وأبراج واستاندات وهياكل واجهات ومثبتات خاصة."></p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="service-card reveal"><i class="bi bi-printer"></i><h3 data-en="Large-format printing" data-ar="الطباعة الكبيرة"></h3><p data-en="Graphics, lightbox faces, murals, vehicle and facade wraps." data-ar="جرافيك وواجهات لايت بوكس وجداريات وتغليف سيارات وواجهات."></p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="service-card reveal"><i class="bi bi-signpost-2"></i><h3 data-en="Signage &amp; lighting" data-ar="اللافتات والإضاءة"></h3><p data-en="Channel letters, illuminated signs, LED systems and drivers." data-ar="حروف بارزة ولوحات مضيئة وأنظمة LED ودرايفرات."></p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="service-card reveal"><i class="bi bi-truck"></i><h3 data-en="Delivery &amp; installation" data-ar="التوريد والتركيب"></h3><p data-en="Our crews, our trucks, night shifts when the store must stay open." data-ar="فرقنا وسياراتنا وورديات ليلية عندما يجب أن يظل المعرض مفتوحًا."></p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="service-card reveal"><i class="bi bi-wrench-adjustable"></i><h3 data-en="Maintenance &amp; rollout support" data-ar="الصيانة ودعم التوسعات"></h3><p data-en="Spare parts kept in stock so branch 40 matches branch 1 two years later." data-ar="قطع غيار مخزنة لتظل الفروع متطابقة بعد سنوات."></p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6"><img class="img-frame" src="assets/img/ph-install.jpg" alt="Installation crew"></div>
+        <div class="col-lg-6">
+          <h2 class="mb-4" data-en="Rollouts are a different sport" data-ar="التنفيذ متعدد الفروع مهمة مختلفة"></h2>
+          <p data-en="Forty branches in eight weeks needs stock control, transport planning and identical units — not just a good workshop. We run rollouts with a shared tracker so you always know which branch is done." data-ar="أربعون فرعًا في ثمانية أسابيع تحتاج إدارة مخزون وتخطيط نقل ووحدات متطابقة — لا مجرد ورشة جيدة. ننفذ التوسعات بجدول متابعة مشترك لتعرف دائمًا أي فرع اكتمل."></p>
+          <ul class="check-list">
+            <li data-en="One prototype approved, then batch production" data-ar="اعتماد نموذج أولي ثم الإنتاج بالجملة"></li>
+            <li data-en="Branch-by-branch schedule shared with your team" data-ar="جدول زمني لكل فرع يُشارك مع فريقك"></li>
+            <li data-en="Packing marked per branch to avoid site confusion" data-ar="تغليف معلّم لكل فرع لتفادي الخلط في الموقع"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container text-center">
+      <h2 data-en="Tell us the scope and the opening date" data-ar="أخبرنا بالنطاق وموعد الافتتاح"></h2>
+      <a href="#contact" data-page="contact" class="btn btn-light btn-lg" data-en="Request a quote" data-ar="اطلب عرض سعر"></a>
+    </div>
+  </section>
+</section>
+
+<!-- ======================== PROJECTS ======================== -->
+<section class="page" id="page-projects">
+  <header class="page-hero" style="background-image:url('assets/img/showroom-hall-02.jpg')">
+    <div class="container">
+      <p class="ph-kicker" data-en="Projects" data-ar="المشروعات"></p>
+      <h1 data-en="Work you can walk into" data-ar="أعمال يمكنك أن تدخلها"></h1>
+      <p class="ph-text" data-en="Filter by factory or sector, then open any project for the full case study." data-ar="اختر حسب المصنع أو القطاع، ثم افتح أي مشروع لقراءة دراسة الحالة كاملة."></p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter buttons -->
+      <div class="filters" id="projectFilters">
+        <button class="filter-btn active" data-filter="all" data-en="All work" data-ar="كل الأعمال"></button>
+        <button class="filter-btn" data-filter="wood" data-en="Wood" data-ar="أخشاب"></button>
+        <button class="filter-btn" data-filter="metal" data-en="Metal" data-ar="معادن"></button>
+        <button class="filter-btn" data-filter="printing" data-en="Printing" data-ar="طباعة"></button>
+        <button class="filter-btn" data-filter="fitout" data-en="Full fit-out" data-ar="تجهيز متكامل"></button>
+        <button class="filter-btn" data-filter="signage" data-en="Signage" data-ar="لافتات"></button>
+      </div>
+
+      <!-- Project cards. Everything the popup shows is stored in data- attributes -->
+      <div class="row g-4" id="projectGrid">
+
+        <div class="col-md-6 col-lg-4 project-item" data-category="fitout">
+          <article class="project-card" role="button" tabindex="0"
+            data-img="assets/img/project-zanussi-cooking-wall.jpg"
+            data-title-en="Zanussi cooking zone" data-title-ar="منطقة الطهي — زانوسي"
+            data-brand="Zanussi" data-year="2025"
+            data-sector-en="Home appliances retail" data-sector-ar="تجزئة الأجهزة المنزلية"
+            data-materials-en="MDF with HPL facing, powder-coated steel, UV-printed acrylic, LED strips" data-materials-ar="MDF مكسو HPL، صاج مدهون إلكتروستاتيك، أكريليك مطبوع UV، شرائط LED"
+            data-services-en="Design, shop drawings, joinery, metal frame, printing, installation" data-services-ar="تصميم، رسومات تنفيذية، نجارة، هيكل معدني، طباعة، تركيب"
+            data-scope-en="42 m² shop-in-shop zone, 3 display bays, 1 illuminated feature wall" data-scope-ar="منطقة شوب إن شوب 42 م²، 3 خلجان عرض، حائط مميز مضيء"
+            data-desc-en="A cooking zone built around a single freestanding range. The yellow portal frames the appliance while the printed feature wall carries the product story in Arabic and English. Built in 19 days from approved drawings to opening."
+            data-desc-ar="منطقة طهي مبنية حول بوتاجاز حر واحد. البوابة الصفراء تؤطر الجهاز بينما يحمل الحائط المطبوع رسالة المنتج بالعربية والإنجليزية. نُفذت في 19 يومًا من اعتماد الرسومات حتى الافتتاح.">
+            <div class="pc-img"><img src="assets/img/project-zanussi-cooking-wall.jpg" alt="Zanussi cooking zone"><span class="pc-tag" data-en="Full fit-out" data-ar="تجهيز متكامل"></span></div>
+            <div class="pc-body"><h3 data-en="Zanussi cooking zone" data-ar="منطقة الطهي — زانوسي"></h3><p class="pc-meta">Zanussi · 2025</p></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-category="wood">
+          <article class="project-card" role="button" tabindex="0"
+            data-img="assets/img/project-kitchen-display.jpg"
+            data-title-en="Built-in kitchen display" data-title-ar="عرض المطابخ المدمجة"
+            data-brand="Zanussi" data-year="2025"
+            data-sector-en="Home appliances retail" data-sector-ar="تجزئة الأجهزة المنزلية"
+            data-materials-en="Gloss white MDF, black granite worktop, 3D ceramic backsplash, LED profiles" data-materials-ar="MDF أبيض لامع، رخام أسود، سيراميك ثلاثي الأبعاد، بروفيلات LED"
+            data-services-en="Joinery, electrical integration, appliance fitting, installation" data-services-ar="نجارة، تكامل كهربائي، تركيب أجهزة، تركيب نهائي"
+            data-scope-en="6 m continuous run with two ovens, microwave, hob and hood live-connected" data-scope-ar="وحدة متصلة 6 أمتار بفرنين وميكروويف ومسطح وشفاط موصلين بالكهرباء"
+            data-desc-en="A working kitchen wall where every appliance can actually be switched on by a customer. Services were routed inside the carcass so no cable is visible from the aisle."
+            data-desc-ar="حائط مطبخ يعمل فعليًا ويمكن للعميل تشغيل أي جهاز فيه. مُررت التوصيلات داخل الهيكل حتى لا يظهر أي كابل من الممر.">
+            <div class="pc-img"><img src="assets/img/project-kitchen-display.jpg" alt="Kitchen display"><span class="pc-tag" data-en="Wood" data-ar="أخشاب"></span></div>
+            <div class="pc-body"><h3 data-en="Built-in kitchen display" data-ar="عرض المطابخ المدمجة"></h3><p class="pc-meta">Zanussi · 2025</p></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-category="metal">
+          <article class="project-card" role="button" tabindex="0"
+            data-img="assets/img/metal-accessories-tower-01.jpg"
+            data-title-en="Accessories tower" data-title-ar="برج الإكسسوارات"
+            data-brand="Zanussi" data-year="2025"
+            data-sector-en="Retail merchandising" data-sector-ar="عرض المنتجات"
+            data-materials-en="Folded steel body, acrylic light diffuser, chrome hooks, printed labels" data-materials-ar="هيكل صاج مثني، ناشر ضوء أكريليك، علاقات كروم، ليبلات مطبوعة"
+            data-services-en="Metal fabrication, lighting, printing, batch production" data-services-ar="تصنيع معدني، إضاءة، طباعة، إنتاج بالجملة"
+            data-scope-en="Free-standing 2.2 m tower, 4 faces, 16 SKU positions, produced in 24 units" data-scope-ar="برج حر بارتفاع 2.2 متر، 4 أوجه، 16 موضع منتج، أُنتج بعدد 24 وحدة"
+            data-desc-en="A four-sided merchandiser designed to be moved by two staff without tools. Light lines are recessed into the body so the tower reads as one glowing outline from across the floor."
+            data-desc-ar="وحدة عرض رباعية الأوجه صُممت ليحركها موظفان بدون عدة. خطوط الإضاءة غائرة داخل الهيكل حتى يبدو البرج كإطار مضيء واحد من آخر الصالة.">
+            <div class="pc-img"><img src="assets/img/metal-accessories-tower-01.jpg" alt="Accessories tower"><span class="pc-tag" data-en="Metal" data-ar="معادن"></span></div>
+            <div class="pc-body"><h3 data-en="Accessories tower" data-ar="برج الإكسسوارات"></h3><p class="pc-meta">Zanussi · 2025</p></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-category="printing">
+          <article class="project-card" role="button" tabindex="0"
+            data-img="assets/img/printing-lightbox-panel.jpg"
+            data-title-en="Laundry lightbox wall" data-title-ar="حائط اللايت بوكس — الغسيل"
+            data-brand="Zanussi" data-year="2024"
+            data-sector-en="Home appliances retail" data-sector-ar="تجزئة الأجهزة المنزلية"
+            data-materials-en="Backlit film, opal acrylic, aluminium frame, edge-lit LED" data-materials-ar="فيلم إضاءة خلفية، أكريليك أوبال، إطار ألومنيوم، LED جانبي"
+            data-services-en="Prepress, large-format printing, frame fabrication, installation" data-services-ar="ما قبل الطباعة، طباعة كبيرة، تصنيع الإطار، تركيب"
+            data-scope-en="Two 1.2 × 2.4 m illuminated panels plus a feature bench" data-scope-ar="لوحتان مضيئتان 1.2×2.4 متر بالإضافة إلى مقعد مميز"
+            data-desc-en="Edge-lit panels chosen over direct backlighting to keep the box only 65 mm deep, which let the wall sit flush with the existing shelving line."
+            data-desc-ar="اخترنا الإضاءة الجانبية بدل الخلفية لتقليل عمق الصندوق إلى 65 مم فقط، ما سمح للحائط بأن يكون بمستوى خط الأرفف القائم.">
+            <div class="pc-img"><img src="assets/img/printing-lightbox-panel.jpg" alt="Lightbox wall"><span class="pc-tag" data-en="Printing" data-ar="طباعة"></span></div>
+            <div class="pc-body"><h3 data-en="Laundry lightbox wall" data-ar="حائط اللايت بوكس — الغسيل"></h3><p class="pc-meta">Zanussi · 2024</p></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-category="signage">
+          <article class="project-card" role="button" tabindex="0"
+            data-img="assets/img/project-storefront-facade.jpg"
+            data-title-en="Storefront &amp; facade" data-title-ar="الواجهة الخارجية"
+            data-brand="Zanussi" data-year="2024"
+            data-sector-en="Retail signage" data-sector-ar="لافتات التجزئة"
+            data-materials-en="Aluminium composite panel, acrylic letters, steel sub-frame, spot lighting" data-materials-ar="ألوكوبوند، حروف أكريليك، هيكل معدني، إضاءة موجهة"
+            data-services-en="Survey, fabrication, signage, night installation" data-services-ar="رفع مقاسات، تصنيع، لافتات، تركيب ليلي"
+            data-scope-en="7 m shopfront, canopy cladding, glazing graphics and entrance sign" data-scope-ar="واجهة 7 أمتار، تكسية الكانوبي، جرافيك الزجاج، ولافتة المدخل"
+            data-desc-en="Installed in one night between closing and opening. The canopy was pre-assembled in the factory in three sections so the crew only had to lift and bolt."
+            data-desc-ar="رُكبت في ليلة واحدة بين الإغلاق والافتتاح. جُهز الكانوبي في المصنع على ثلاثة أجزاء ليقتصر عمل الفريق على الرفع والتثبيت.">
+            <div class="pc-img"><img src="assets/img/project-storefront-facade.jpg" alt="Storefront"><span class="pc-tag" data-en="Signage" data-ar="لافتات"></span></div>
+            <div class="pc-body"><h3 data-en="Storefront &amp; facade" data-ar="الواجهة الخارجية"></h3><p class="pc-meta">Zanussi · 2024</p></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-category="fitout">
+          <article class="project-card" role="button" tabindex="0"
+            data-img="assets/img/showroom-hall-02.jpg"
+            data-title-en="Showroom rollout — Cairo" data-title-ar="تجهيز معرض — القاهرة"
+            data-brand="Electrolux Group" data-year="2025"
+            data-sector-en="Flagship showroom" data-sector-ar="معرض رئيسي"
+            data-materials-en="Painted MDF portals, stretch-ceiling light panels, printed columns, checker-plate platforms" data-materials-ar="بوابات MDF مدهونة، أسقف فرنسية مضيئة، أعمدة مطبوعة، قواعد صاج مقلم"
+            data-services-en="Design development, full manufacturing, ceiling, lighting, installation" data-services-ar="تطوير التصميم، تصنيع كامل، أسقف، إضاءة، تركيب"
+            data-scope-en="310 m² showroom floor delivered in 6 weeks" data-scope-ar="معرض بمساحة 310 م² تم تسليمه في 6 أسابيع"
+            data-desc-en="A full floor rebuilt around lit portals that divide the space into product worlds. The black ceiling and floating light panels keep attention on the appliances rather than the structure."
+            data-desc-ar="إعادة بناء دور كامل حول بوابات مضيئة تقسم المساحة إلى عوالم منتجات. السقف الأسود والألواح المضيئة المعلقة تُبقي الانتباه على الأجهزة لا على الديكور.">
+            <div class="pc-img"><img src="assets/img/showroom-hall-02.jpg" alt="Showroom"><span class="pc-tag" data-en="Full fit-out" data-ar="تجهيز متكامل"></span></div>
+            <div class="pc-body"><h3 data-en="Showroom rollout — Cairo" data-ar="تجهيز معرض — القاهرة"></h3><p class="pc-meta">Electrolux Group · 2025</p></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-category="wood">
+          <article class="project-card" role="button" tabindex="0"
+            data-img="assets/img/wood-kitchen-panel-01.jpg"
+            data-title-en="Sliding graphic panels" data-title-ar="بانوهات متحركة"
+            data-brand="Zanussi" data-year="2024"
+            data-sector-en="Retail merchandising" data-sector-ar="عرض المنتجات"
+            data-materials-en="18 mm MDF, heavy-duty castors, printed vinyl face, aluminium track" data-materials-ar="MDF 18 مم، عجلات تحمل عالي، وجه فينيل مطبوع، مجرى ألومنيوم"
+            data-services-en="Joinery, printing, hardware engineering, installation" data-services-ar="نجارة، طباعة، هندسة الإكسسوار، تركيب"
+            data-scope-en="4 sliding panels, 2.4 m high, hiding built-in appliance storage" data-scope-ar="4 بانوهات متحركة بارتفاع 2.4 متر تخفي مخزن الأجهزة المدمجة"
+            data-desc-en="Panels that slide aside to reveal stock behind the display. The castor and track system was sized so a single member of staff can move a panel with one hand."
+            data-desc-ar="بانوهات تنزلق جانبًا لتكشف المخزون خلف العرض. اختير نظام العجلات والمجرى ليتمكن موظف واحد من تحريك البانوه بيد واحدة.">
+            <div class="pc-img"><img src="assets/img/wood-kitchen-panel-01.jpg" alt="Sliding panels"><span class="pc-tag" data-en="Wood" data-ar="أخشاب"></span></div>
+            <div class="pc-body"><h3 data-en="Sliding graphic panels" data-ar="بانوهات متحركة"></h3><p class="pc-meta">Zanussi · 2024</p></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-category="metal">
+          <article class="project-card" role="button" tabindex="0"
+            data-img="assets/img/project-laundry-wall.jpg"
+            data-title-en="Laundry display wall" data-title-ar="حائط عرض الغسالات"
+            data-brand="Zanussi" data-year="2025"
+            data-sector-en="Home appliances retail" data-sector-ar="تجزئة الأجهزة المنزلية"
+            data-materials-en="Steel wall grid, laminated panels, checker-plate plinths, cantilever shelf" data-materials-ar="شبكة حائط معدنية، ألواح لاميناتي، قواعد صاج مقلم، رف كابولي"
+            data-services-en="Metal structure, joinery panels, printing, installation" data-services-ar="هيكل معدني، ألواح نجارة، طباعة، تركيب"
+            data-scope-en="9 m display wall with 6 live appliance positions and power outlets" data-scope-ar="حائط عرض 9 أمتار بـ6 مواضع أجهزة تعمل ومخارج كهرباء"
+            data-desc-en="A steel grid behind the panels lets the client move washer positions later without cutting anything. Sockets are placed at every module so the layout can change with the range."
+            data-desc-ar="شبكة معدنية خلف الألواح تتيح للعميل تغيير مواضع الغسالات لاحقًا دون قص أي شيء. وُضعت مخارج كهرباء في كل وحدة ليتغير التوزيع مع تغير التشكيلة.">
+            <div class="pc-img"><img src="assets/img/project-laundry-wall.jpg" alt="Laundry wall"><span class="pc-tag" data-en="Metal" data-ar="معادن"></span></div>
+            <div class="pc-body"><h3 data-en="Laundry display wall" data-ar="حائط عرض الغسالات"></h3><p class="pc-meta">Zanussi · 2025</p></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-category="printing">
+          <article class="project-card" role="button" tabindex="0"
+            data-img="assets/img/printing-wall-graphic.jpg"
+            data-title-en="Lemon mural room" data-title-ar="غرفة الجدارية"
+            data-brand="Zanussi" data-year="2024"
+            data-sector-en="Brand environment" data-sector-ar="بيئة العلامة"
+            data-materials-en="Latex-printed wall vinyl, matt laminate, painted steel shelving" data-materials-ar="فينيل حائط مطبوع لاتكس، تغليف مطفي، أرفف معدنية مدهونة"
+            data-services-en="Artwork scaling, printing, application, shelving" data-services-ar="تجهيز التصميم، طباعة، تركيب الفينيل، أرفف"
+            data-scope-en="18 m² seamless wall graphic applied in a single night" data-scope-ar="جرافيك حائط 18 م² بدون وصلات ظاهرة رُكب في ليلة واحدة"
+            data-desc-en="Printed in three panels with a knife-cut overlap so the joints fall inside the dark areas of the image and disappear from two metres away."
+            data-desc-ar="طُبع على ثلاث قطع بتداخل مقصوص بحيث تقع الوصلات داخل المناطق الداكنة من الصورة وتختفي من مسافة مترين.">
+            <div class="pc-img"><img src="assets/img/printing-wall-graphic.jpg" alt="Wall mural"><span class="pc-tag" data-en="Printing" data-ar="طباعة"></span></div>
+            <div class="pc-body"><h3 data-en="Lemon mural room" data-ar="غرفة الجدارية"></h3><p class="pc-meta">Zanussi · 2024</p></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-category="fitout">
+          <article class="project-card" role="button" tabindex="0"
+            data-img="assets/img/showroom-hall-03.jpg"
+            data-title-en="Laundry brand zone" data-title-ar="منطقة العلامة — الغسيل"
+            data-brand="Electrolux Group" data-year="2025"
+            data-sector-en="Flagship showroom" data-sector-ar="معرض رئيسي"
+            data-materials-en="Printed lightbox columns, MDF portals, LED profiles, laminated flooring platforms" data-materials-ar="أعمدة لايت بوكس مطبوعة، بوابات MDF، بروفيلات LED، قواعد أرضية"
+            data-services-en="Design, manufacturing, printing, lighting, installation" data-services-ar="تصميم، تصنيع، طباعة، إضاءة، تركيب"
+            data-scope-en="Central island with 4 lit faces plus a feature benefit wall" data-scope-ar="جزيرة مركزية بأربعة أوجه مضيئة وحائط مزايا"
+            data-desc-en="The island doubles as the accessories point of sale and as the light source for the zone, which removed the need for extra ceiling fixtures."
+            data-desc-ar="الجزيرة تعمل كنقطة بيع للإكسسوارات وكمصدر إضاءة للمنطقة في الوقت نفسه، ما ألغى الحاجة لوحدات إضاءة إضافية بالسقف.">
+            <div class="pc-img"><img src="assets/img/showroom-hall-03.jpg" alt="Laundry brand zone"><span class="pc-tag" data-en="Full fit-out" data-ar="تجهيز متكامل"></span></div>
+            <div class="pc-body"><h3 data-en="Laundry brand zone" data-ar="منطقة العلامة — الغسيل"></h3><p class="pc-meta">Electrolux Group · 2025</p></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-category="printing">
+          <article class="project-card" role="button" tabindex="0"
+            data-img="assets/img/printing-accessories-panel.jpg"
+            data-title-en="Bilingual product panels" data-title-ar="بانوهات المنتجات ثنائية اللغة"
+            data-brand="Zanussi" data-year="2024"
+            data-sector-en="Retail communication" data-sector-ar="التواصل داخل المعرض"
+            data-materials-en="PVC foam board, UV direct print, acrylic label holders, LED line" data-materials-ar="ألواح PVC فوم، طباعة UV مباشرة، حوامل ليبل أكريليك، خط LED"
+            data-services-en="Bilingual artwork, printing, panel fabrication, fixing" data-services-ar="تصميم ثنائي اللغة، طباعة، تصنيع البانوهات، تثبيت"
+            data-scope-en="12 panels across 3 categories with replaceable price tickets" data-scope-ar="12 بانوه في 3 فئات مع تذاكر أسعار قابلة للتغيير"
+            data-desc-en="Arabic and English set at the same optical weight so neither language looks like a translation of the other. Price tickets slide out for weekly changes."
+            data-desc-ar="العربية والإنجليزية بنفس الثقل البصري حتى لا تبدو إحداهما ترجمة للأخرى. تذاكر الأسعار تُسحب وتُبدل أسبوعيًا.">
+            <div class="pc-img"><img src="assets/img/printing-accessories-panel.jpg" alt="Product panels"><span class="pc-tag" data-en="Printing" data-ar="طباعة"></span></div>
+            <div class="pc-body"><h3 data-en="Bilingual product panels" data-ar="بانوهات المنتجات ثنائية اللغة"></h3><p class="pc-meta">Zanussi · 2024</p></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-category="wood">
+          <article class="project-card" role="button" tabindex="0"
+            data-img="assets/img/install-corner-unit.jpg"
+            data-title-en="Corner display unit" data-title-ar="وحدة عرض ركنية"
+            data-brand="Zanussi" data-year="2023"
+            data-sector-en="Retail merchandising" data-sector-ar="عرض المنتجات"
+            data-materials-en="Painted MDF, yellow gloss lacquer, concealed sockets, LED plinth light" data-materials-ar="MDF مدهون، لاكيه أصفر لامع، مخارج كهرباء مخفية، إضاءة قاعدة LED"
+            data-services-en="Joinery, finishing, electrical, installation" data-services-ar="نجارة، تشطيب، كهرباء، تركيب"
+            data-scope-en="Corner unit with 4 appliance positions and a lit plinth" data-scope-ar="وحدة ركنية بأربعة مواضع أجهزة وقاعدة مضيئة"
+            data-desc-en="Built to turn an awkward corner into usable display metres. The gloss lacquer was sprayed in four coats to hold up against trolley knocks."
+            data-desc-ar="صُممت لتحويل ركن صعب إلى أمتار عرض مفيدة. رُش اللاكيه اللامع على أربع طبقات ليتحمل اصطدام العربات.">
+            <div class="pc-img"><img src="assets/img/install-corner-unit.jpg" alt="Corner unit"><span class="pc-tag" data-en="Wood" data-ar="أخشاب"></span></div>
+            <div class="pc-body"><h3 data-en="Corner display unit" data-ar="وحدة عرض ركنية"></h3><p class="pc-meta">Zanussi · 2023</p></div>
+          </article>
+        </div>
+
+      </div>
+
+      <p class="no-results d-none" id="noResults" data-en="No projects in this category yet." data-ar="لا توجد مشروعات في هذا التصنيف حتى الآن."></p>
+    </div>
+  </section>
+</section>
+
+<!-- ========================= BRANDS ========================= -->
+<section class="page" id="page-brands">
+  <header class="page-hero" style="background-image:url('assets/img/showroom-hall-01.jpg')">
+    <div class="container">
+      <p class="ph-kicker" data-en="Brands" data-ar="العلامات التجارية"></p>
+      <h1 data-en="Brands that keep coming back" data-ar="علامات تعود إلينا كل مرة"></h1>
+      <p class="ph-text" data-en="Click any brand to see what we have built for them." data-ar="اضغط على أي علامة لترى ما نفذناه لها."></p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-4" id="brandGrid">
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="brand-card" role="button" tabindex="0"
+            data-name="Zanussi"
+            data-since="2016"
+            data-sector-en="Home appliances" data-sector-ar="أجهزة منزلية"
+            data-desc-en="Our longest-running retail partner. We produce their shop-in-shop programme across Egypt, from the display walls down to the accessory hooks."
+            data-desc-ar="أطول شراكة ريتيل لدينا. ننتج برنامج الشوب إن شوب الخاص بهم في مصر، من حوائط العرض حتى علاقات الإكسسوارات."
+            data-projects-en="Cooking zone · Kitchen display · Accessories tower · Laundry wall · Storefront"
+            data-projects-ar="منطقة الطهي · عرض المطابخ · برج الإكسسوارات · حائط الغسالات · الواجهة"
+            data-services-en="Retail design · Joinery · Metal · Printing · Signage · Installation"
+            data-services-ar="تصميم ريتيل · نجارة · معادن · طباعة · لافتات · تركيب">
+            <span class="brand-mark">ZANUSSI</span>
+            <span class="brand-cta" data-en="View profile" data-ar="عرض الملف"></span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="brand-card" role="button" tabindex="0"
+            data-name="Electrolux Group" data-since="2018"
+            data-sector-en="Home appliances" data-sector-ar="أجهزة منزلية"
+            data-desc-en="Flagship showroom fit-outs and seasonal zone updates, delivered on tight opening dates."
+            data-desc-ar="تجهيز المعارض الرئيسية وتحديث المناطق الموسمية بمواعيد افتتاح ضيقة."
+            data-projects-en="Cairo showroom rollout · Laundry brand zone"
+            data-projects-ar="تجهيز معرض القاهرة · منطقة علامة الغسيل"
+            data-services-en="Design development · Manufacturing · Lighting · Installation"
+            data-services-ar="تطوير التصميم · تصنيع · إضاءة · تركيب">
+            <span class="brand-mark">ELECTROLUX</span>
+            <span class="brand-cta" data-en="View profile" data-ar="عرض الملف"></span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="brand-card" role="button" tabindex="0"
+            data-name="Fresh" data-since="2019"
+            data-sector-en="Home &amp; kitchen appliances" data-sector-ar="أجهزة منزلية ومطابخ"
+            data-desc-en="Branch signage and in-store merchandising units produced as repeat batches for a growing network."
+            data-desc-ar="لافتات الفروع ووحدات العرض داخل المحلات بإنتاج دفعات متكررة لشبكة فروع متنامية."
+            data-projects-en="Branch signage programme · Gondola units"
+            data-projects-ar="برنامج لافتات الفروع · وحدات جندولا"
+            data-services-en="Signage · Metal · Printing · Rollout support"
+            data-services-ar="لافتات · معادن · طباعة · دعم التوسعات">
+            <span class="brand-mark">FRESH</span>
+            <span class="brand-cta" data-en="View profile" data-ar="عرض الملف"></span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="brand-card" role="button" tabindex="0"
+            data-name="Tornado" data-since="2020"
+            data-sector-en="Electronics retail" data-sector-ar="تجزئة الإلكترونيات"
+            data-desc-en="Display stands and promotional islands designed for fast assembly during seasonal campaigns."
+            data-desc-ar="استاندات عرض وجزر ترويجية مصممة للتركيب السريع في الحملات الموسمية."
+            data-projects-en="Seasonal promo islands · AC display stands"
+            data-projects-ar="جزر العروض الموسمية · استاندات التكييفات"
+            data-services-en="Metal · Printing · Logistics · Installation"
+            data-services-ar="معادن · طباعة · نقل · تركيب">
+            <span class="brand-mark">TORNADO</span>
+            <span class="brand-cta" data-en="View profile" data-ar="عرض الملف"></span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="brand-card" role="button" tabindex="0"
+            data-name="Unionaire" data-since="2021"
+            data-sector-en="Air conditioning" data-sector-ar="التكييف"
+            data-desc-en="Outdoor signage and exhibition stands, including weather-rated facade work."
+            data-desc-ar="لافتات خارجية وأجنحة معارض، وتشمل أعمال واجهات مقاومة للعوامل الجوية."
+            data-projects-en="Exhibition stand · Outdoor branch signage"
+            data-projects-ar="جناح معرض · لافتات فروع خارجية"
+            data-services-en="Metal · Signage · Printing · Installation"
+            data-services-ar="معادن · لافتات · طباعة · تركيب">
+            <span class="brand-mark">UNIONAIRE</span>
+            <span class="brand-cta" data-en="View profile" data-ar="عرض الملف"></span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="brand-card" role="button" tabindex="0"
+            data-name="Beko" data-since="2022"
+            data-sector-en="Home appliances" data-sector-ar="أجهزة منزلية"
+            data-desc-en="Modular display systems that a local team can reconfigure between product launches."
+            data-desc-ar="أنظمة عرض قابلة للتركيب يستطيع الفريق المحلي إعادة ترتيبها بين إطلاقات المنتجات."
+            data-projects-en="Modular display system · Launch corners"
+            data-projects-ar="نظام عرض مرن · أركان الإطلاق"
+            data-services-en="Design · Joinery · Metal · Printing"
+            data-services-ar="تصميم · نجارة · معادن · طباعة">
+            <span class="brand-mark">BEKO</span>
+            <span class="brand-cta" data-en="View profile" data-ar="عرض الملف"></span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="brand-card" role="button" tabindex="0"
+            data-name="LG" data-since="2022"
+            data-sector-en="Consumer electronics" data-sector-ar="إلكترونيات استهلاكية"
+            data-desc-en="Screen walls and demo counters built to strict global brand specifications."
+            data-desc-ar="حوائط شاشات وكاونترات عرض منفذة وفق مواصفات عالمية صارمة."
+            data-projects-en="Screen wall · Demo counter programme"
+            data-projects-ar="حائط الشاشات · برنامج كاونترات العرض"
+            data-services-en="Joinery · Metal · Electrical · Installation"
+            data-services-ar="نجارة · معادن · كهرباء · تركيب">
+            <span class="brand-mark">LG</span>
+            <span class="brand-cta" data-en="View profile" data-ar="عرض الملف"></span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="brand-card" role="button" tabindex="0"
+            data-name="Samsung" data-since="2023"
+            data-sector-en="Consumer electronics" data-sector-ar="إلكترونيات استهلاكية"
+            data-desc-en="Retail zones and pop-up units produced for launches across multiple governorates."
+            data-desc-ar="مناطق عرض ووحدات مؤقتة للإطلاقات في عدة محافظات."
+            data-projects-en="Launch pop-up units · Mall activation"
+            data-projects-ar="وحدات إطلاق مؤقتة · تفعيل داخل المولات"
+            data-services-en="Design · Manufacturing · Printing · Nationwide rollout"
+            data-services-ar="تصميم · تصنيع · طباعة · تنفيذ في كل المحافظات">
+            <span class="brand-mark">SAMSUNG</span>
+            <span class="brand-cta" data-en="View profile" data-ar="عرض الملف"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ========================= PROCESS ========================= -->
+<section class="page" id="page-process">
+  <header class="page-hero" style="background-image:url('assets/img/ph-engineering.jpg')">
+    <div class="container">
+      <p class="ph-kicker" data-en="Process" data-ar="مراحل العمل"></p>
+      <h1 data-en="Eight steps between your brief and your opening" data-ar="ثماني خطوات بين طلبك وافتتاحك"></h1>
+      <p class="ph-text" data-en="Every project runs on the same track, whether it is one counter or forty branches." data-ar="كل مشروع يسير على نفس المسار، سواء كان كاونترًا واحدًا أو أربعين فرعًا."></p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <ol class="timeline">
+        <li><div class="tl-body"><h3 data-en="Brief" data-ar="استلام الطلب"></h3><p data-en="We listen to the scope, the budget range and the date that cannot move." data-ar="نستمع إلى نطاق العمل والميزانية والموعد الذي لا يمكن تأجيله."></p></div></li>
+        <li><div class="tl-body"><h3 data-en="Site survey" data-ar="رفع المقاسات"></h3><p data-en="Our team measures the space and records power, ceiling height and access routes." data-ar="يقيس فريقنا المكان ويسجل الكهرباء وارتفاع السقف ومسارات الدخول."></p></div></li>
+        <li><div class="tl-body"><h3 data-en="Design &amp; 3D" data-ar="التصميم والإظهار"></h3><p data-en="Concept and renders, revised with you until the look is agreed." data-ar="التصور والمشاهد ثلاثية الأبعاد، تُعدل معك حتى الاتفاق على الشكل النهائي."></p></div></li>
+        <li><div class="tl-body"><h3 data-en="Shop drawings &amp; quote" data-ar="الرسومات التنفيذية وعرض السعر"></h3><p data-en="Technical drawings with materials, finishes, price and a dated schedule." data-ar="رسومات فنية بالخامات والتشطيبات والسعر وجدول زمني محدد."></p></div></li>
+        <li><div class="tl-body"><h3 data-en="Prototype" data-ar="النموذج الأولي"></h3><p data-en="For rollouts we build one unit first and get it signed off." data-ar="في المشروعات المتكررة ننفذ وحدة واحدة أولًا ونعتمدها."></p></div></li>
+        <li><div class="tl-body"><h3 data-en="Production" data-ar="الإنتاج"></h3><p data-en="Wood, metal and print run in parallel so nothing waits on anything." data-ar="الأخشاب والمعادن والطباعة تعمل بالتوازي حتى لا ينتظر عمل عملًا آخر."></p></div></li>
+        <li><div class="tl-body"><h3 data-en="Quality control" data-ar="مراقبة الجودة"></h3><p data-en="Dry assembly, colour and electrical checks, then protective packing." data-ar="تجميع تجريبي وفحص ألوان وكهرباء ثم تغليف واقٍ."></p></div></li>
+        <li><div class="tl-body"><h3 data-en="Installation &amp; handover" data-ar="التركيب والتسليم"></h3><p data-en="Our crews install, close the snag list and hand over a photo report." data-ar="فرقنا تركّب وتغلق الملاحظات وتسلم تقريرًا مصورًا."></p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6"><img class="img-frame" src="assets/img/ph-survey.jpg" alt="Site survey"></div>
+        <div class="col-lg-6">
+          <h2 class="mb-4" data-en="What we need from you" data-ar="ما نحتاجه منك"></h2>
+          <ul class="check-list">
+            <li data-en="A drawing, a photo or a reference image — any of them is enough to start" data-ar="رسم أو صورة أو مرجع بصري — أي منها يكفي للبدء"></li>
+            <li data-en="The store address and available working hours" data-ar="عنوان الفرع وساعات العمل المتاحة"></li>
+            <li data-en="Brand guidelines: colours, fonts and logo files" data-ar="دليل العلامة: الألوان والخطوط وملفات الشعار"></li>
+            <li data-en="The opening date, even if it is approximate" data-ar="موعد الافتتاح ولو تقريبيًا"></li>
+          </ul>
+          <a href="#contact" data-page="contact" class="btn btn-red mt-3" data-en="Start a project" data-ar="ابدأ مشروعًا"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ========================= CONTACT ========================= -->
+<section class="page" id="page-contact">
+  <header class="page-hero" style="background-image:url('assets/img/showroom-hall-01.jpg')">
+    <div class="container">
+      <p class="ph-kicker" data-en="Contact" data-ar="تواصل معنا"></p>
+      <h1 data-en="Request a quote" data-ar="اطلب عرض سعر"></h1>
+      <p class="ph-text" data-en="Fill in what you know. We reply within one working day." data-ar="املأ ما تعرفه. نرد خلال يوم عمل واحد."></p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-5">
+
+        <div class="col-lg-7">
+          <form id="quoteForm" class="quote-form" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="qName" data-en="Full name" data-ar="الاسم بالكامل"></label>
+                <input type="text" class="form-control" id="qName" required data-en-ph="Your name" data-ar-ph="اسمك">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="qCompany" data-en="Company" data-ar="الشركة"></label>
+                <input type="text" class="form-control" id="qCompany" data-en-ph="Company name" data-ar-ph="اسم الشركة">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="qEmail" data-en="Email" data-ar="البريد الإلكتروني"></label>
+                <input type="email" class="form-control" id="qEmail" required dir="ltr" data-en-ph="name@company.com" data-ar-ph="name@company.com">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="qPhone" data-en="Phone" data-ar="رقم الهاتف"></label>
+                <input type="tel" class="form-control" id="qPhone" required dir="ltr" data-en-ph="+20 100 000 0000" data-ar-ph="+20 100 000 0000">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="qService" data-en="What do you need?" data-ar="ما الذي تحتاجه؟"></label>
+                <select class="form-select" id="qService">
+                  <option data-en="Full fit-out" data-ar="تجهيز متكامل"></option>
+                  <option data-en="Joinery / wood" data-ar="نجارة / أخشاب"></option>
+                  <option data-en="Metal fabrication" data-ar="تصنيع معادن"></option>
+                  <option data-en="Printing" data-ar="طباعة"></option>
+                  <option data-en="Signage" data-ar="لافتات"></option>
+                  <option data-en="Something else" data-ar="شيء آخر"></option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="qDate" data-en="Target date" data-ar="الموعد المستهدف"></label>
+                <input type="date" class="form-control" id="qDate">
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="qMessage" data-en="Project details" data-ar="تفاصيل المشروع"></label>
+                <textarea class="form-control" id="qMessage" rows="5" required data-en-ph="Location, size, quantity, anything useful" data-ar-ph="الموقع والمساحة والكمية وأي تفاصيل مفيدة"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-red btn-lg" data-en="Send request" data-ar="إرسال الطلب"></button>
+              </div>
+            </div>
+            <p class="form-note d-none" id="formSuccess" data-en="Thank you — your request was received. We will call you within one working day." data-ar="شكرًا لك — تم استلام طلبك. سنتصل بك خلال يوم عمل واحد."></p>
+            <p class="form-error d-none" id="formError" data-en="Please complete the required fields with a valid email." data-ar="من فضلك أكمل الحقول المطلوبة ببريد إلكتروني صحيح."></p>
+          </form>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="contact-box">
+            <h3 data-en="Talk to us directly" data-ar="تحدث إلينا مباشرة"></h3>
+            <p><i class="bi bi-telephone-fill"></i> <a href="tel:+201000000000" dir="ltr">+20 100 000 0000</a></p>
+            <p><i class="bi bi-whatsapp"></i> <a href="https://wa.me/201000000000" target="_blank" rel="noopener" dir="ltr">+20 100 000 0000</a></p>
+            <p><i class="bi bi-envelope-fill"></i> <a href="mailto:info@andcreative.com">info@andcreative.com</a></p>
+            <p><i class="bi bi-geo-alt-fill"></i> <span data-en="Industrial Zone, 6th of October City — Giza, Egypt" data-ar="المنطقة الصناعية، مدينة 6 أكتوبر — الجيزة، مصر"></span></p>
+            <p><i class="bi bi-clock-fill"></i> <span data-en="Sunday to Thursday, 9:00 – 18:00" data-ar="من الأحد إلى الخميس، 9:00 – 18:00"></span></p>
+          </div>
+          <div class="map-box">
+            <!-- Placeholder Google Maps location — replace the src with your own embed link -->
+            <iframe
+              src="https://www.google.com/maps?q=6th+of+October+City,+Giza,+Egypt&output=embed"
+              width="100%" height="320" style="border:0" loading="lazy" title="Location map"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER (exists only once in the whole file)
+============================================================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand">
+          <img src="assets/img/logo.jpg" alt="And Creative Factory">
+          <strong>and creative <em data-en="Factory" data-ar="فاكتوري"></em></strong>
+        </div>
+        <p data-en="Advertising, engineering, manufacturing and printing under one roof. Wood, metal and print factories with in-house installation crews." data-ar="دعاية وهندسة وتصنيع وطباعة تحت سقف واحد. مصانع أخشاب ومعادن وطباعة مع فرق تركيب داخلية."></p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h4 data-en="Company" data-ar="الشركة"></h4>
+        <ul class="footer-links">
+          <li><a href="#about" data-page="about" data-en="About" data-ar="عن الشركة"></a></li>
+          <li><a href="#capabilities" data-page="capabilities" data-en="Capabilities" data-ar="الإمكانيات"></a></li>
+          <li><a href="#process" data-page="process" data-en="Process" data-ar="مراحل العمل"></a></li>
+          <li><a href="#brands" data-page="brands" data-en="Brands" data-ar="العلامات"></a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h4 data-en="Factories" data-ar="المصانع"></h4>
+        <ul class="footer-links">
+          <li><a href="#wood" data-page="wood" data-en="Wood Factory" data-ar="مصنع الأخشاب"></a></li>
+          <li><a href="#metal" data-page="metal" data-en="Metal Factory" data-ar="مصنع المعادن"></a></li>
+          <li><a href="#printing" data-page="printing" data-en="Printing Factory" data-ar="مصنع الطباعة"></a></li>
+          <li><a href="#projects" data-page="projects" data-en="Projects" data-ar="المشروعات"></a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4">
+        <h4 data-en="Get in touch" data-ar="تواصل معنا"></h4>
+        <ul class="footer-contact">
+          <li><i class="bi bi-geo-alt-fill"></i> <span data-en="Industrial Zone, 6th of October City — Giza, Egypt" data-ar="المنطقة الصناعية، مدينة 6 أكتوبر — الجيزة، مصر"></span></li>
+          <li><i class="bi bi-telephone-fill"></i> <a href="tel:+201000000000" dir="ltr">+20 100 000 0000</a></li>
+          <li><i class="bi bi-envelope-fill"></i> <a href="mailto:info@andcreative.com">info@andcreative.com</a></li>
+        </ul>
+        <a href="#contact" data-page="contact" class="btn btn-red mt-2" data-en="Request a quote" data-ar="اطلب عرض سعر"></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span data-en="© 2026 And Creative Factory. All rights reserved." data-ar="© 2026 آند كرييتف فاكتوري. جميع الحقوق محفوظة."></span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" class="to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- ============================================================
+     POPUPS (Bootstrap modals)
+============================================================ -->
+
+<!-- Project case study -->
+<div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content case-modal">
+      <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      <img id="cmImage" src="" alt="">
+      <div class="modal-body">
+        <p class="cm-eyebrow"><span id="cmBrand"></span> · <span id="cmYear"></span></p>
+        <h2 id="cmTitle"></h2>
+        <div class="cm-grid">
+          <div><h5 data-en="Sector" data-ar="القطاع"></h5><p id="cmSector"></p></div>
+          <div><h5 data-en="Scope" data-ar="نطاق العمل"></h5><p id="cmScope"></p></div>
+          <div><h5 data-en="Materials" data-ar="الخامات"></h5><p id="cmMaterials"></p></div>
+          <div><h5 data-en="Services" data-ar="الخدمات"></h5><p id="cmServices"></p></div>
+        </div>
+        <h5 data-en="About the project" data-ar="عن المشروع"></h5>
+        <p id="cmDesc" class="cm-desc"></p>
+        <a href="#contact" data-page="contact" class="btn btn-red" data-bs-dismiss="modal" data-en="Start something similar" data-ar="نفّذ مشروعًا مشابهًا"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Brand profile -->
+<div class="modal fade" id="brandModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content brand-modal">
+      <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      <div class="modal-body">
+        <span class="brand-mark big" id="bmName"></span>
+        <p class="cm-eyebrow"><span id="bmSector"></span> · <span data-en="Partner since" data-ar="شريك منذ"></span> <span id="bmSince"></span></p>
+        <p id="bmDesc"></p>
+        <h5 data-en="Projects with us" data-ar="مشروعات معنا"></h5>
+        <p id="bmProjects"></p>
+        <h5 data-en="Services we provide" data-ar="الخدمات التي نقدمها"></h5>
+        <p id="bmServices"></p>
+        <a href="#projects" data-page="projects" class="btn btn-red" data-bs-dismiss="modal" data-en="See the work" data-ar="شاهد الأعمال"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image lightbox for galleries -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content image-modal">
+      <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      <img id="lightboxImg" src="" alt="">
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
