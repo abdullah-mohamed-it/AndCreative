@@ -52,7 +52,6 @@ body {
   font-family: var(--font-en);
   font-size: 16px;
   line-height: 1.65;
-  overflow-x: hidden;
   transition:
     background 0.25s ease,
     color 0.25s ease;
@@ -214,7 +213,6 @@ html[data-theme="dark"] .topbar {
   font-size: 0.92rem;
   border-radius: 3px;
   padding: 0.5rem 0.8rem;
-  margin-bottom: 5px;
 }
 .dropdown-item:hover,
 .dropdown-item.active {
@@ -381,6 +379,30 @@ html[data-theme="dark"] .section-dark {
   opacity: 1;
   transform: none;
 }
+.stat {
+  border-top: 3px solid var(--red);
+  padding-top: 1rem;
+}
+.stat b {
+  display: block;
+  font-family: var(--font-head);
+  font-size: 2.9rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--text);
+}
+.stat > span {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 600;
+  display: block;
+}
+.stat b .counter {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal {
     opacity: 1;
@@ -553,15 +575,34 @@ html[data-theme="dark"] .section-dark {
   border-inline-start: 4px solid var(--red);
   padding-inline-start: 1rem;
 }
+/* A plain flex pair for two side-by-side stats, used instead of a
+   nested Bootstrap row/col (whose negative gutter margins were
+   bleeding a few pixels past their column on narrow screens). */
+.stat-pair {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+.stat-pair > div {
+  flex: 1;
+  min-width: 0;
+}
 .fact strong {
   display: block;
   font-size: 2rem;
   font-weight: 900;
   line-height: 1.1;
+  display: block;
+  font-family: var(--font-head);
+  font-size: 2.9rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--text);
 }
 .fact span {
   font-size: 0.88rem;
   color: var(--text-soft);
+  
 }
 
 /* Factory cards */
@@ -1255,56 +1296,4 @@ html[data-theme="dark"] .site-footer {
 }
 .to-top:hover {
   background: var(--red-dark);
-}
-/* ----------------- */
-
-
-.reveals {
-  opacity: 0;
-  transform: translateY(20px);
-  transition:
-    opacity 0.6s ease,
-    transform 0.6s ease;
-}
-.reveal.is-shown {
-  opacity: 1;
-  transform: none;
-}
-.stat {
-  border-top: 3px solid var(--red);
-  padding-top: 1rem;
-}
-.stat b {
-  display: block;
-  font-family: var(--font-head);
-  font-size: 2.9rem;
-  font-weight: 600;
-  line-height: 1;
-  color: var(--text);
-}
-.stat > span {
-  font-size: 0.9rem;
-  color: var(--muted);
-  font-weight: 600;
-  display: block;
-}
-.stat b .counter {
-  font-size: inherit;
-  font-weight: inherit;
-  color: inherit;
-}
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-}
-.link-company:hover {
-  background-color: rgba(128, 128, 128, 0.146);
-  color: rgba(255, 0, 0, 0.578);
-  border-radius: 12px;
-}
-.link-company {
-  padding-inline: 25px;
-  padding-block: 10px;
-  font-weight: bold;
-  transition: .1s;
 }

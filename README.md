@@ -1,6 +1,6 @@
-# And Creative Factory — website
+# And Creative Factory — website (final version)
 
-Open `index.html` with VS Code **Live Server** (or double-click it). Everything runs from this one file.
+This is the one official version of the site going forward. Open `index.html` with VS Code **Live Server** (or double-click it) — everything runs from this single file.
 
 ## Files
 
@@ -8,9 +8,11 @@ Open `index.html` with VS Code **Live Server** (or double-click it). Everything 
 index.html          all 11 pages, the navbar and the footer (each written once)
 css/main.css        colors, typography, components, light + dark theme
 css/responsive.css  all media queries and RTL fixes
-js/main.js          plain JavaScript, split into 12 commented sections
-assets/img/         photos and placeholders
-assets/videos/      3 placeholder MP4 clips
+css/polish.css       premium extras: cursor, tilt, marquee, transitions, loader
+js/main.js           core site logic, split into 12 commented sections
+js/polish.js         the extras above — safe to delete along with its <link>/<script> tag to go back to the plain design
+assets/img/          your real project photos (no placeholders left)
+assets/videos/       3 placeholder MP4 clips — replace with real footage when ready
 ```
 
 ## Pages
@@ -19,21 +21,16 @@ Home · About · Capabilities · Wood Factory · Metal Factory · Printing Facto
 
 They are all `<section class="page" id="page-xxx">` inside `index.html`. `main.js` hides them all and shows one. The address bar keeps the page, so `index.html#wood` opens the wood factory directly.
 
-## Replacing images
+## What's already in place
 
-Every image is a normal `<img src="assets/img/...">`. Keep the same file name and drop your own photo on top of it — nothing else needs to change.
+- Every image is your own real photography — nothing left to replace.
+- Custom cursor, gentle 3D tilt on cards, a smooth crossfade between pages, an auto-scrolling brand strip, a real branded preloader, a scroll-progress bar, and a floating WhatsApp button.
+- A custom mobile menu icon that morphs into an X when opened.
+- Favicon and social-preview (Open Graph) tags.
 
-Files starting with `ph-` are generated placeholders (they say "replace this image" on them). These are the ones to swap first:
+## Replacing a photo
 
-| File | Use it for |
-|---|---|
-| `ph-wood-hero.jpg`, `ph-cnc.jpg`, `ph-edgebander.jpg` | wood factory |
-| `ph-metal-hero.jpg`, `ph-laser.jpg`, `ph-press-brake.jpg`, `ph-powder.jpg` | metal factory |
-| `ph-print-hero.jpg`, `ph-uv-printer.jpg`, `ph-latex.jpg`, `ph-cutting-plotter.jpg` | printing factory |
-| `ph-engineering.jpg`, `ph-qc.jpg`, `ph-survey.jpg`, `ph-install.jpg` | engineering, QC, survey, installation |
-| `ph-team.jpg`, `ph-about.jpg` | about page |
-
-Your own photos are already used across Home, Projects, the factory pages and the galleries.
+Every image is a plain `<img src="assets/img/...">`. Keep the same file name and drop your own photo on top of it — nothing else needs to change. Names describe what's in them (`project-kitchen-display.jpg`, `metal-accessories-tower-01.jpg`, and so on).
 
 ## Replacing videos
 
@@ -51,11 +48,11 @@ Edit the attribute, not the text between the tags (it is filled in by JavaScript
 
 ## Adding a project
 
-Copy any `<article class="project-card">` block in the Projects page and edit its `data-` attributes. The case-study popup reads them directly, so there is no separate list to update. `data-category` must match one of the filter buttons: `wood`, `metal`, `printing`, `fitout`, `signage`.
+Copy any `<article class="project-card">` block on the Projects page and edit its `data-` attributes. The case-study popup reads them directly, so there is no separate list to keep in sync. `data-category` must match one of the filter buttons: `wood`, `metal`, `printing`, `fitout`, `signage`.
 
 ## Adding a brand
 
-Same idea — copy a `<div class="brand-card">` and edit its `data-` attributes.
+Same idea — copy a `<div class="brand-card">` block and edit its `data-` attributes.
 
 ## Contact form
 
@@ -65,6 +62,10 @@ Same idea — copy a `<div class="brand-card">` and edit its `data-` attributes.
 
 The Contact page uses a Google Maps embed pointing at 6th of October City. Replace the `src` of the `<iframe>` with your own embed link (Google Maps → Share → Embed a map).
 
+## WhatsApp / phone number
+
+The floating WhatsApp button, the footer icon, and the Contact page all currently use the placeholder number `+20 100 000 0000`. Search the file for `201000000000` and `+20 100 000 0000` and swap in the real number once you have it.
+
 ## Note
 
-Bootstrap 5, Bootstrap Icons and Google Fonts load from CDN, so the first load needs an internet connection. To work fully offline, download them and point the `<link>` and `<script>` tags at local copies.
+Bootstrap Icons and Google Fonts load from a CDN, so the first load needs an internet connection. To work fully offline, download them and point the `<link>` tags at local copies.

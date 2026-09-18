@@ -11,7 +11,7 @@
       name="description"
       content="And Creative Factory: wood, metal and printing factories with in-house engineering and installation teams. Retail displays, shop-in-shop, signage and turnkey fit-out."
     />
-    <link rel="icon" href="assets/img/logo.jpg" sizes="any"/>
+
     <!-- Bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -33,8 +33,27 @@
     <!-- Our own styles (only two files) -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/polish.css" />
+    <meta
+      property="og:title"
+      content="And Creative Factory — Advertising, Engineering, Manufacturing, Printing"
+    />
+    <meta
+      property="og:description"
+      content="Wood, metal and printing factories with in-house engineering and installation teams."
+    />
+    <meta property="og:image" content="assets/img/logo.jpg" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/img/logo.jpg" />
   </head>
   <body>
+    <!-- Brief branded loader shown while the page's fonts, CSS and
+     images finish their first load. Purely cosmetic. -->
+    <div class="page-loader">
+      <div class="loader-brand">and<span>,</span></div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+
     <!-- ============================================================
      TOP BAR
 ============================================================ -->
@@ -68,7 +87,7 @@
         <a class="navbar-brand" href="#home" data-page="home">
           <img src="assets/img/logo.jpg" alt="And Creative Factory" />
           <span class="brand-text">
-            <strong>And Creative</strong>
+            <strong class="text-capitalize">and creative</strong>
             <em data-en="Factory" data-ar="فاكتوري"></em>
           </span>
         </a>
@@ -136,7 +155,7 @@
               <ul class="dropdown-menu">
                 <li>
                   <a
-                    class="dropdown-item"
+                    class="dropdown-item mb-1"
                     href="#wood"
                     data-page="wood"
                     data-en="Wood Factory"
@@ -145,7 +164,7 @@
                 </li>
                 <li>
                   <a
-                    class="dropdown-item"
+                    class="dropdown-item mb-1"
                     href="#metal"
                     data-page="metal"
                     data-en="Metal Factory"
@@ -154,7 +173,7 @@
                 </li>
                 <li>
                   <a
-                    class="dropdown-item"
+                    class="dropdown-item mb-1"
                     href="#printing"
                     data-page="printing"
                     data-en="Printing Factory"
@@ -320,9 +339,7 @@
               <div class="col-6 col-lg-3">
                 <div class="counter-box stat reveal">
                   <strong
-                    ><b
-                      ><span class="counter" data-target="1250">0</span>+</b
-                    ></strong
+                    ><b><span class="counter" data-target="1250">0</span>+</b></strong
                   >
                   <span
                     data-en="Projects delivered"
@@ -331,21 +348,17 @@
                 </div>
               </div>
               <div class="col-6 col-lg-3">
-                <div class="counter-box stat reveal">
+                <div class="counter-box reveal stat">
                   <strong
-                    ><b
-                      ><span class="counter" data-target="120">0</span>+</b
-                    ></strong
+                    ><b><span class="counter" data-target="120">0</span>+</b></strong
                   >
                   <span data-en="Brands served" data-ar="علامة تجارية"></span>
                 </div>
               </div>
               <div class="col-6 col-lg-3">
-                <div class="counter-box stat reveal">
+                <div class="counter-box reveal stat">
                   <strong
-                    ><b
-                      ><span class="counter" data-target="9500">0</span></b
-                    ></strong
+                    ><b><span class="counter" data-target="9500">0</span></b></strong
                   >
                   <span
                     data-en="m² of factory floor"
@@ -354,11 +367,9 @@
                 </div>
               </div>
               <div class="col-6 col-lg-3">
-                <div class="counter-box stat reveal">
+                <div class="counter-box reveal stat">
                   <strong
-                    ><b
-                      ><span class="counter" data-target="180">0</span>+</b
-                    ></strong
+                    ><b><span class="counter" data-target="180">0</span>+</b></strong
                   >
                   <span
                     data-en="Engineers &amp; technicians"
@@ -658,7 +669,7 @@
               <div class="col-lg-6">
                 <img
                   class="img-frame"
-                  src="assets/img/ph-qc.jpg"
+                  src="assets/img/detail-backsplash-counter.jpg"
                   alt="Quality control inspection"
                 />
               </div>
@@ -703,7 +714,7 @@
         </section>
 
         <!-- Brands strip -->
-        <section class="section section-soft">
+        <section class="section section-soft marquee-clip">
           <div class="container">
             <div class="section-head">
               <h2 data-en="Trusted by" data-ar="عملاؤنا"></h2>
@@ -780,17 +791,17 @@
                   data-en="Our clients are appliance brands, retail chains, developers and agencies who need a single partner responsible for the whole result, not five suppliers blaming each other."
                   data-ar="عملاؤنا علامات أجهزة منزلية وسلاسل تجزئة ومطورون ووكالات دعاية يحتاجون شريكًا واحدًا مسؤولًا عن النتيجة كاملة، لا خمسة موردين يتبادلون الاتهامات."
                 ></p>
-                <div class="row g-3 mt-2">
-                  <div class="col-6">
+                <div class="stat-pair mt-2">
+                  <div>
                     <div class="fact">
                       <strong class="counter" data-target="2008">0</strong
                       ><span data-en="Founded" data-ar="سنة التأسيس"></span>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div>
                     <div class="fact">
-                      <strong
-                        ><span class="counter" data-target="3">0</span></strong
+                      <strong class="counter" data-target="3"
+                        >0</strong
                       ><span
                         data-en="Production halls"
                         data-ar="صالات إنتاج"
@@ -802,7 +813,7 @@
               <div class="col-lg-6">
                 <img
                   class="img-frame"
-                  src="assets/img/ph-about.jpg"
+                  src="assets/img/showroom-hall-01.jpg"
                   alt="Facility overview"
                 />
               </div>
@@ -868,7 +879,7 @@
               <div class="col-lg-6">
                 <img
                   class="img-frame"
-                  src="assets/img/ph-team.jpg"
+                  src="assets/img/showroom-hall-02.jpg"
                   alt="Our team"
                 />
               </div>
@@ -962,7 +973,7 @@
               <div class="col-lg-6">
                 <img
                   class="img-frame"
-                  src="assets/img/ph-engineering.jpg"
+                  src="assets/img/wood-kitchen-panel-02.jpg"
                   alt="Engineering office"
                 />
               </div>
@@ -1014,7 +1025,10 @@
             <div class="row g-4">
               <div class="col-lg-4">
                 <div class="cap-card reveal">
-                  <img src="assets/img/ph-cnc.jpg" alt="CNC router" />
+                  <img
+                    src="assets/img/wood-kitchen-panel-01.jpg"
+                    alt="CNC router"
+                  />
                   <div class="cap-body">
                     <h3 data-en="Wood line" data-ar="خط الأخشاب"></h3>
                     <p
@@ -1026,7 +1040,10 @@
               </div>
               <div class="col-lg-4">
                 <div class="cap-card reveal">
-                  <img src="assets/img/ph-laser.jpg" alt="Fiber laser" />
+                  <img
+                    src="assets/img/metal-accessories-tower-02.jpg"
+                    alt="Fiber laser"
+                  />
                   <div class="cap-body">
                     <h3 data-en="Metal line" data-ar="خط المعادن"></h3>
                     <p
@@ -1038,7 +1055,10 @@
               </div>
               <div class="col-lg-4">
                 <div class="cap-card reveal">
-                  <img src="assets/img/ph-uv-printer.jpg" alt="UV printer" />
+                  <img
+                    src="assets/img/printing-wall-graphic.jpg"
+                    alt="UV printer"
+                  />
                   <div class="cap-body">
                     <h3 data-en="Print line" data-ar="خط الطباعة"></h3>
                     <p
@@ -1120,6 +1140,7 @@
               </div>
               <div class="col-md-6 col-lg-4">
                 <div class="qc-card reveal accent">
+                  <span class="qc-num">6</span>
                   <h3 data-en="Warranty" data-ar="الضمان"></h3>
                   <p
                     data-en="12 months on structure and electrical work, with a maintenance line you can call."
@@ -1194,20 +1215,18 @@
                   data-en="The wood factory carries most of what a customer actually touches in a store: counters, gondolas, cabinet runs, display backs and kitchen sets. We work mainly in MDF, plywood, HPL-faced board and solid beech for structural parts."
                   data-ar="مصنع الأخشاب ينتج معظم ما يلمسه العميل فعليًا داخل المعرض: الكاونترات والجندولات والوحدات والخلفيات والمطابخ. نعمل أساسًا بخامات MDF والأبلكاش والألواح المكسوة HPL والزان المصمت للأجزاء الإنشائية."
                 ></p>
-                <div class="row g-3">
-                  <div class="col-6">
+                <div class="stat-pair">
+                  <div>
                     <div class="fact">
-                      <strong
-                        ><span class="counter" data-target="4000"
-                          >0</span
-                        ></strong
+                      <strong class="counter" data-target="4000"
+                        >0</strong
                       ><span data-en="m² hall" data-ar="متر مربع"></span>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div>
                     <div class="fact">
-                      <strong
-                        ><span class="counter" data-target="65">0</span></strong
+                      <strong class="counter" data-target="65"
+                        >0</strong
                       ><span
                         data-en="carpenters &amp; operators"
                         data-ar="نجار ومشغل"
@@ -1219,7 +1238,7 @@
               <div class="col-lg-6">
                 <img
                   class="img-frame"
-                  src="assets/img/ph-wood-hero.jpg"
+                  src="assets/img/project-kitchen-display.jpg"
                   alt="Wood factory hall"
                 />
               </div>
@@ -1292,7 +1311,7 @@
             <div class="section-head">
               <h2 data-en="Production process" data-ar="مراحل الإنتاج"></h2>
             </div>
-            <ol class="flow">
+            <ul class="flow">
               <li>
                 <h3 data-en="Cutting list" data-ar="قائمة القص"></h3>
                 <p
@@ -1331,7 +1350,7 @@
                   data-ar="تجميع وفحص وفك وتغليف للنقل."
                 ></p>
               </li>
-            </ol>
+            </ul>
           </div>
         </section>
 
@@ -1386,7 +1405,7 @@
               <div class="col-lg-5">
                 <img
                   class="img-frame"
-                  src="assets/img/ph-edgebander.jpg"
+                  src="assets/img/detail-joinery-lock.jpg"
                   alt="Edge bander"
                 />
               </div>
@@ -1465,7 +1484,7 @@
                 class="gallery-img"
               />
               <img
-                src="assets/img/ph-cnc.jpg"
+                src="assets/img/wood-kitchen-panel-01.jpg"
                 alt="CNC router"
                 class="gallery-img"
               />
@@ -1536,20 +1555,18 @@
                   data-en="Steel, stainless and aluminium work for anything that carries load or needs to survive outdoors: display towers, lightbox bodies, facade cladding frames, shelving structures and custom hardware."
                   data-ar="أعمال الصاج والاستانلس والألومنيوم لكل ما يتحمل أحمالًا أو يتعرض للخارج: أبراج العرض، وهياكل اللايت بوكس، وإطارات تكسية الواجهات، وهياكل الأرفف، والإكسسوارات الخاصة."
                 ></p>
-                <div class="row g-3">
-                  <div class="col-6">
+                <div class="stat-pair">
+                  <div>
                     <div class="fact">
-                      <strong
-                        ><span class="counter" data-target="3200"
-                          >0</span
-                        ></strong
+                      <strong class="counter" data-target="3200"
+                        >0</strong
                       ><span data-en="m² hall" data-ar="متر مربع"></span>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div>
                     <div class="fact">
-                      <strong
-                        ><span class="counter" data-target="48">0</span></strong
+                      <strong class="counter" data-target="48"
+                        >0</strong
                       ><span
                         data-en="welders &amp; operators"
                         data-ar="لحام ومشغل"
@@ -1561,7 +1578,7 @@
               <div class="col-lg-6">
                 <img
                   class="img-frame"
-                  src="assets/img/ph-metal-hero.jpg"
+                  src="assets/img/metal-accessories-tower-01.jpg"
                   alt="Metal factory hall"
                 />
               </div>
@@ -1634,7 +1651,7 @@
             <div class="section-head">
               <h2 data-en="Production process" data-ar="مراحل الإنتاج"></h2>
             </div>
-            <ol class="flow">
+            <ul class="flow">
               <li>
                 <h3 data-en="Nesting" data-ar="التعشيش"></h3>
                 <p
@@ -1676,7 +1693,7 @@
                   data-ar="إزالة شحوم وفوسفتة ودهان وفرن تجفيف."
                 ></p>
               </li>
-            </ol>
+            </ul>
           </div>
         </section>
 
@@ -1731,7 +1748,7 @@
               <div class="col-lg-5">
                 <img
                   class="img-frame"
-                  src="assets/img/ph-press-brake.jpg"
+                  src="assets/img/metal-accessories-tower-02.jpg"
                   alt="Press brake"
                 />
               </div>
@@ -1795,7 +1812,7 @@
             </div>
             <div class="gallery">
               <img
-                src="assets/img/ph-laser.jpg"
+                src="assets/img/project-laundry-wall.jpg"
                 alt="Laser cutting"
                 class="gallery-img"
               />
@@ -1810,7 +1827,7 @@
                 class="gallery-img"
               />
               <img
-                src="assets/img/ph-powder.jpg"
+                src="assets/img/install-corner-unit.jpg"
                 alt="Powder coating"
                 class="gallery-img"
               />
@@ -1891,20 +1908,18 @@
                   data-en="The print hall finishes what wood and metal build. We print direct to acrylic, PVC, aluminium composite and board, or onto vinyl and backlit film for applied graphics."
                   data-ar="صالة الطباعة تُكمل ما تصنعه الأخشاب والمعادن. نطبع مباشرة على الأكريليك وPVC والألوكوبوند والألواح، أو على الفينيل وفيلم الإضاءة الخلفية للجرافيك اللاصق."
                 ></p>
-                <div class="row g-3">
-                  <div class="col-6">
+                <div class="stat-pair">
+                  <div>
                     <div class="fact">
-                      <strong
-                        ><span class="counter" data-target="2300"
-                          >0</span
-                        ></strong
+                      <strong class="counter" data-target="2300"
+                        >0</strong
                       ><span data-en="m² hall" data-ar="متر مربع"></span>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div>
                     <div class="fact">
-                      <strong
-                        ><span class="counter" data-target="24">0</span
+                      <strong class="d-flex"
+                        ><strong class="counter" data-target="24">0</strong
                         >/7</strong
                       ><span
                         data-en="print shifts"
@@ -1917,7 +1932,7 @@
               <div class="col-lg-6">
                 <img
                   class="img-frame"
-                  src="assets/img/ph-print-hero.jpg"
+                  src="assets/img/printing-wall-graphic.jpg"
                   alt="Printing factory hall"
                 />
               </div>
@@ -1990,7 +2005,7 @@
             <div class="section-head">
               <h2 data-en="Production process" data-ar="مراحل الإنتاج"></h2>
             </div>
-            <ol class="flow">
+            <ul class="flow">
               <li>
                 <h3 data-en="File check" data-ar="مراجعة الملف"></h3>
                 <p
@@ -2029,7 +2044,7 @@
                   data-ar="قص كونتور ثم تركيب على الوحدة النهائية."
                 ></p>
               </li>
-            </ol>
+            </ul>
           </div>
         </section>
 
@@ -2087,7 +2102,7 @@
               <div class="col-lg-5">
                 <img
                   class="img-frame"
-                  src="assets/img/ph-latex.jpg"
+                  src="assets/img/printing-lightbox-panel.jpg"
                   alt="Latex printer"
                 />
               </div>
@@ -2151,12 +2166,12 @@
             </div>
             <div class="gallery">
               <img
-                src="assets/img/ph-uv-printer.jpg"
+                src="assets/img/printing-accessories-panel.jpg"
                 alt="UV printer"
                 class="gallery-img"
               />
               <img
-                src="assets/img/ph-cutting-plotter.jpg"
+                src="assets/img/project-zanussi-cooking-wall.jpg"
                 alt="Cutting plotter"
                 class="gallery-img"
               />
@@ -2340,7 +2355,7 @@
               <div class="col-lg-6">
                 <img
                   class="img-frame"
-                  src="assets/img/ph-install.jpg"
+                  src="assets/img/install-corner-unit.jpg"
                   alt="Installation crew"
                 />
               </div>
@@ -3215,7 +3230,7 @@
         <header
           class="page-hero"
           style="
-            background-image: url(&quot;assets/img/ph-engineering.jpg&quot;);
+            background-image: url(&quot;assets/img/wood-kitchen-panel-02.jpg&quot;);
           "
         >
           <div class="container">
@@ -3323,7 +3338,7 @@
               <div class="col-lg-6">
                 <img
                   class="img-frame"
-                  src="assets/img/ph-survey.jpg"
+                  src="assets/img/showroom-hall-03.jpg"
                   alt="Site survey"
                 />
               </div>
@@ -3600,8 +3615,8 @@
           <div class="col-lg-4">
             <div class="footer-brand">
               <img src="assets/img/logo.jpg" alt="And Creative Factory" />
-              <strong
-                >And Creative <em data-en="Factory" data-ar="فاكتوري"></em
+              <strong class="text-capitalize"
+                >and creative <em data-en="Factory" data-ar="فاكتوري"></em
               ></strong>
             </div>
             <p
@@ -3727,18 +3742,17 @@
           </div>
         </div>
 
-        <div class="footer-bottom">
+        <div class="footer-bottom d-flex justify-content-around align-items-center">
           <span
             data-en="© 2026 And Creative Factory. All rights reserved."
             data-ar="© 2026 آند كرييتف فاكتوري. جميع الحقوق محفوظة."
           ></span>
-          <a
-            href="https://narvex.vercel.app/"
-            target="_blank"
-            class="link-company"
-          >
-            <span data-en="Built by NARVEX" data-ar="تطوير NARVEX"></span>
-          </a>
+          <span class="footer-credit"
+            >
+            <a href="https://narvex.vercel.app/" target="_blank" rel="noopener"
+              >Built by NARVEX</a
+            >
+          </span>
         </div>
       </div>
     </footer>
@@ -3862,6 +3876,27 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Decorative overlay layer (polish.css / polish.js). Purely visual:
+     a scroll-position indicator, a floating WhatsApp button, a soft
+     print-texture grain over the site, and a two-part cursor that
+     reacts near clickable elements. All disabled automatically on
+     touch devices and for visitors who prefer reduced motion. -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="grain-overlay" aria-hidden="true"></div>
+    <a
+      class="whatsapp-fab"
+      href="https://wa.me/201000000000"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+      ><i class="bi bi-whatsapp"></i
+    ></a>
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursorRing" aria-hidden="true">
+      <span id="cursorLabel"></span>
+    </div>
+
     <script src="js/main.js"></script>
+    <script src="js/polish.js"></script>
   </body>
 </html>

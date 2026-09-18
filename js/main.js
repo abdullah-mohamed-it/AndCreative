@@ -17,7 +17,6 @@
    12. Start everything
    ========================================================================== */
 
-
 /* ==========================================================================
    1. PAGE NAVIGATION
    All pages live inside index.html as <section class="page" id="page-xxx">.
@@ -85,7 +84,6 @@ function closeMobileMenu() {
   }
 }
 
-
 /* ==========================================================================
    2. LANGUAGE SWITCHING
    Every text element has data-en="English text" and data-ar="Arabic text".
@@ -114,7 +112,10 @@ function setLanguage(lang) {
   // Replace placeholders inside the contact form.
   var inputs = document.querySelectorAll("[data-en-ph]");
   for (var j = 0; j < inputs.length; j++) {
-    inputs[j].setAttribute("placeholder", inputs[j].getAttribute("data-" + lang + "-ph"));
+    inputs[j].setAttribute(
+      "placeholder",
+      inputs[j].getAttribute("data-" + lang + "-ph"),
+    );
   }
 
   // The button shows the OTHER language.
@@ -130,7 +131,6 @@ function setupLanguageButton() {
   });
 }
 
-
 /* ==========================================================================
    3. THEME SWITCHING (light / dark)
    The theme is one attribute on the <html> tag. CSS does the rest.
@@ -144,7 +144,8 @@ function setTheme(theme) {
 
   // Sun icon in dark mode, moon icon in light mode.
   var icon = document.getElementById("themeIcon");
-  icon.className = theme === "dark" ? "bi bi-sun-fill" : "bi bi-moon-stars-fill";
+  icon.className =
+    theme === "dark" ? "bi bi-sun-fill" : "bi bi-moon-stars-fill";
 
   localStorage.setItem("acf-theme", theme);
 }
@@ -154,7 +155,6 @@ function setupThemeButton() {
     setTheme(currentTheme === "light" ? "dark" : "light");
   });
 }
-
 
 /* ==========================================================================
    4. ANIMATED COUNTERS
@@ -172,7 +172,7 @@ function startCounters() {
 function countUp(element) {
   var target = Number(element.getAttribute("data-target"));
   var current = 0;
-  var steps = 60;              // how many frames the animation takes
+  var steps = 60; // how many frames the animation takes
   var increase = target / steps;
 
   element.textContent = "0";
@@ -181,7 +181,7 @@ function countUp(element) {
     current = current + increase;
 
     if (current >= target) {
-      element.textContent = target;   // finish exactly on the target
+      element.textContent = target; // finish exactly on the target
       clearInterval(timer);
     } else {
       element.textContent = Math.floor(current);
@@ -189,20 +189,22 @@ function countUp(element) {
   }, 20);
 }
 
-
 /* ==========================================================================
    5. SCROLL REVEAL
    Elements with class "reveal" fade in when they enter the screen.
    ========================================================================== */
 
 function setupReveal() {
-  var watcher = new IntersectionObserver(function (entries) {
-    for (var i = 0; i < entries.length; i++) {
-      if (entries[i].isIntersecting) {
-        entries[i].target.classList.add("shown");
+  var watcher = new IntersectionObserver(
+    function (entries) {
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) {
+          entries[i].target.classList.add("shown");
+        }
       }
-    }
-  }, { threshold: 0.12 });
+    },
+    { threshold: 0.12 },
+  );
 
   var items = document.querySelectorAll(".reveal");
   for (var j = 0; j < items.length; j++) {
@@ -225,7 +227,6 @@ function resetReveal() {
     }
   }
 }
-
 
 /* ==========================================================================
    6. PROJECT FILTERS
@@ -272,7 +273,6 @@ function filterProjects(category) {
   }
 }
 
-
 /* ==========================================================================
    7. PROJECT CASE-STUDY POPUP
    All project details are stored on the card as data- attributes,
@@ -300,14 +300,20 @@ function setupProjectPopups() {
 function openProject(card) {
   // "get" reads the correct language automatically.
   function get(name) {
-    return card.getAttribute("data-" + name + "-" + currentLang) || card.getAttribute("data-" + name) || "";
+    return (
+      card.getAttribute("data-" + name + "-" + currentLang) ||
+      card.getAttribute("data-" + name) ||
+      ""
+    );
   }
 
   document.getElementById("cmImage").src = card.getAttribute("data-img");
   document.getElementById("cmImage").alt = get("title");
   document.getElementById("cmTitle").textContent = get("title");
-  document.getElementById("cmBrand").textContent = card.getAttribute("data-brand");
-  document.getElementById("cmYear").textContent = card.getAttribute("data-year");
+  document.getElementById("cmBrand").textContent =
+    card.getAttribute("data-brand");
+  document.getElementById("cmYear").textContent =
+    card.getAttribute("data-year");
   document.getElementById("cmSector").textContent = get("sector");
   document.getElementById("cmScope").textContent = get("scope");
   document.getElementById("cmMaterials").textContent = get("materials");
@@ -317,7 +323,6 @@ function openProject(card) {
   var popup = new bootstrap.Modal(document.getElementById("projectModal"));
   popup.show();
 }
-
 
 /* ==========================================================================
    8. BRAND PROFILE POPUP
@@ -343,11 +348,17 @@ function setupBrandPopups() {
 
 function openBrand(card) {
   function get(name) {
-    return card.getAttribute("data-" + name + "-" + currentLang) || card.getAttribute("data-" + name) || "";
+    return (
+      card.getAttribute("data-" + name + "-" + currentLang) ||
+      card.getAttribute("data-" + name) ||
+      ""
+    );
   }
 
-  document.getElementById("bmName").textContent = card.getAttribute("data-name");
-  document.getElementById("bmSince").textContent = card.getAttribute("data-since");
+  document.getElementById("bmName").textContent =
+    card.getAttribute("data-name");
+  document.getElementById("bmSince").textContent =
+    card.getAttribute("data-since");
   document.getElementById("bmSector").textContent = get("sector");
   document.getElementById("bmDesc").textContent = get("desc");
   document.getElementById("bmProjects").textContent = get("projects");
@@ -356,7 +367,6 @@ function openBrand(card) {
   var popup = new bootstrap.Modal(document.getElementById("brandModal"));
   popup.show();
 }
-
 
 /* ==========================================================================
    9. IMAGE LIGHTBOX
@@ -377,7 +387,6 @@ function setupLightbox() {
   }
 }
 
-
 /* ==========================================================================
    10. CONTACT FORM
    We check the required fields, then show a thank-you message.
@@ -388,7 +397,7 @@ function setupContactForm() {
   var form = document.getElementById("quoteForm");
 
   form.addEventListener("submit", function (event) {
-    event.preventDefault();   // stop the page from reloading
+    event.preventDefault(); // stop the page from reloading
 
     var name = document.getElementById("qName");
     var email = document.getElementById("qEmail");
@@ -428,7 +437,6 @@ function setupContactForm() {
   });
 }
 
-
 /* ==========================================================================
    11. NAVBAR SHADOW + BACK TO TOP
    ========================================================================== */
@@ -456,14 +464,12 @@ function setupScrollEffects() {
   });
 }
 
-
 /* ==========================================================================
    12. START EVERYTHING
    This runs once, as soon as the page is ready.
    ========================================================================== */
 
 document.addEventListener("DOMContentLoaded", function () {
-
   // Use the saved language and theme, or the defaults.
   setLanguage(localStorage.getItem("acf-lang") || "en");
   setTheme(localStorage.getItem("acf-theme") || "light");
